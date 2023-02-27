@@ -34,6 +34,7 @@ ln -s $HOME/dotfiles/.zshrc ~
 ln -s $HOME/dotfiles/.p10k.zsh ~
 ln -s $HOME/dotfiles/themes $HOME/.local/share 
 ln -s $HOME/dotfiles/icons $HOME/.local/share
+ln -s $HOME/dotfiles/fonts $HOME/.local/share
 touch ~/.histfile
 
 #St and dmenu
