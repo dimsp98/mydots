@@ -1,0 +1,15 @@
+[submodule "zsh/zsh-autosuggestions"]
+	path = zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh/zsh-syntax-highlighting"]
+	path = zsh/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "zsh/powerlevel10k"]
+	path = zsh/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k
+[submodule "ranger/plugins/ranger_devicons"]
+	path = ranger/plugins/ranger_devicons
+	url = https://github.com/alexanderjeurissen/ranger_devicons
+[submodule "ranger/plugins/ranger-archives"]
+	path = ranger/plugins/ranger-archives
+	url = https://github.com/maximtrp/ranger-archives
