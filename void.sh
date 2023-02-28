@@ -44,9 +44,9 @@ cd ~/dotfiles/suckless/st && sudo make clean install
 chsh -s /usr/bin/zsh && sudo chsh -s /usr/bin/zsh 
 
 #AstroNVim
-sudo xbps-install tree-sitter ripgrep gdu bottom && cd ~ 
-git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-nvim +PackerSync
+sudo xbps-install tree-sitter && cd ~ 
+git clone https://github.com/nullchilly/CatNvim.git ~/.config/nvim
+nvim
 
 #Configure fonts
 sudo ln -s /usr/share/fontconfig/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d/
