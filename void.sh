@@ -45,7 +45,7 @@ chsh -s /usr/bin/zsh && sudo chsh -s /usr/bin/zsh
 
 #AstroNVim
 sudo xbps-install tree-sitter lazygit ripgrep sqlite fd yarn lldb nvm && cd ~ 
-git clone https://github.com/Jint-lzxy/nvimconfig.git 
+git clone  https://github.com/ayamir/nvimdots.git
 ~/nvimconfig/scripts/install.sh
 
 #Configure fonts
