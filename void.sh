@@ -30,11 +30,12 @@ ln -s $HOME/dotfiles/neofetch ~/.config
 ln -s $HOME/dotfiles/picom ~/.config
 ln -s $HOME/dotfiles/ranger ~/.config
 ln -s $HOME/dotfiles/rofi ~/.config
+ln -s $HOME/dotfiles/bottom ~/.config
 ln -s $HOME/dotfiles/.zshrc ~
 ln -s $HOME/dotfiles/.p10k.zsh ~
 ln -s $HOME/dotfiles/themes ~/.local/share 
 ln -s $HOME/dotfiles/icons ~/.local/share
-ln -s $HOME/dotfiles/fonts ~/.local/share
+ln -s $HOME/dotfiles/fonts ~/.local/share 
 touch ~/.histfile
 
 #St and dmenu
