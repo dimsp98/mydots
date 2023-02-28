@@ -16,4 +16,4 @@ File manager: [ranger](https://github.com/ranger/ranger)
 
 Color scheme: [Catppuccin Mocha](https://github.com/catppuccin/catppuccin)
 
-![void](https://user-images.githubusercontent.com/125738354/221920414-4c1f4194-677b-4bb0-8a7a-01c77a644664.png)
+![voidlinux](https://user-images.githubusercontent.com/125738354/221960657-6a3be42a-93e3-4bd0-b9e8-721c3b59a546.png)
