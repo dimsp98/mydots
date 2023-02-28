@@ -44,7 +44,7 @@ cd ~/dotfiles/suckless/st && sudo make clean install
 chsh -s /usr/bin/zsh && sudo chsh -s /usr/bin/zsh 
 
 #AstroNVim
-sudo xbps-install tree-sitter && cd ~ 
+sudo xbps-install tree-sitter lazygit ripgrep sqlite fd yarn lldb nvm && cd ~ 
 git clone https://github.com/Jint-lzxy/nvimconfig.git 
 ~/nvimconfig/scripts/install.sh
 
