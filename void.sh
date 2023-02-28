@@ -45,8 +45,11 @@ chsh -s /usr/bin/zsh && sudo chsh -s /usr/bin/zsh
 
 #AstroNVim
 sudo xbps-install tree-sitter lazygit ripgrep sqlite fd yarn lldb nvm && cd ~ 
-git clone  https://github.com/ayamir/nvimdots.git
-~/nvimconfig/scripts/install.sh
+if command -v curl >/dev/null 2>&1; then
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/ayamir/nvimdots/HEAD/scripts/install.sh)"
+else
+    bash -c "$(wget -O- https://raw.githubusercontent.com/ayamir/nvimdots/HEAD/scripts/install.sh)"
+fi
 
 #Configure fonts
 sudo ln -s /usr/share/fontconfig/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d/
@@ -59,4 +62,3 @@ sudo cp /usr/share/sddm/themes/sddm-astronaut-theme/Fonts/* /usr/share/fonts/
 echo "[Theme]
 Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf
 sudo ln -s /etc/sv/sddm /var/service 
-
