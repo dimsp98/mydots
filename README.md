@@ -4,13 +4,13 @@ Distro: [Void Linux](https://voidlinux.org/)
 
 Window Manager: [bspwm](https://github.com/baskerville/bspwm)
 
-Bar: [polybar](https://polybar.github.io/)
+Bar: [polybar](https://polybar.github.io/), modified [Keyitdev](https://github.com/Keyitdev/dotfiles) config
 
 Launcher: [rofi](https://github.com/davatorium/rofi), scripts by [adi1090x](https://github.com/adi1090x/rofi)
 
 Terminal: [st](https://st.suckless.org/)
 
-Zsh theme: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+Shell: [zsh](https://www.zsh.org/) with [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 File manager: [ranger](https://github.com/ranger/ranger)
 
