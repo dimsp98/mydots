@@ -45,8 +45,8 @@ chsh -s /usr/bin/zsh && sudo chsh -s /usr/bin/zsh
 
 #AstroNVim
 sudo xbps-install tree-sitter && cd ~ 
-git clone https://github.com/nullchilly/CatNvim.git ~/.config/nvim
-nvim
+git clone https://github.com/Jint-lzxy/nvimconfig.git 
+~/nvimconfig/scripts/install.sh
 
 #Configure fonts
 sudo ln -s /usr/share/fontconfig/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d/
