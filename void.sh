@@ -39,7 +39,7 @@ ln -s $HOME/dotfiles/fonts ~/.local/share
 touch ~/.histfile
 
 #dwm 
-cd ~ && git clone https://github.com/dimsp98/dwm.git && mv ~/dwm ~/.dwm
+cd ~ && git clone https://github.com/dimsp98/dwm.git ~/.dwm
 cd .dwm && sudo make clean install && cd ~
 sudo ln -s $HOME/dotfiles/suckless/dwm.desktop /usr/share/xsessions
 
