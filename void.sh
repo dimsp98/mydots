@@ -38,6 +38,10 @@ ln -s $HOME/dotfiles/icons ~/.local/share
 ln -s $HOME/dotfiles/fonts ~/.local/share 
 touch ~/.histfile
 
+#dwm 
+cd ~ && git clone https://github.com/dimsp98/.dwm.git && mv ~/dwm ~/.dwm
+cd .dwm && sudo make clean install && cd ~
+
 #St and dmenu
 cd ~/dotfiles/suckless/st && sudo make clean install
 
