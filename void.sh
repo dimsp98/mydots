@@ -41,6 +41,7 @@ touch ~/.histfile
 #dwm 
 cd ~ && git clone https://github.com/dimsp98/dwm.git ~/.dwm
 cd .dwm && sudo make clean install && cd ~
+git clone https://github.com/dimsp98/slstatus.git && cd slstatus && sudo make clean install
 sudo ln -s $HOME/dotfiles/suckless/dwm.desktop /usr/share/xsessions
 
 #St and dmenu
