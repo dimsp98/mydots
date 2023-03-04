@@ -29,12 +29,16 @@ ln -s $HOME/dotfiles/neofetch ~/.config
 ln -s $HOME/dotfiles/picom ~/.config
 ln -s $HOME/dotfiles/ranger ~/.config
 ln -s $HOME/dotfiles/rofi ~/.config
+ln -s $HOME/dotfiles/lf-ueberzug ~/.config
 ln -s $HOME/dotfiles/bottom ~/.config
 ln -s $HOME/dotfiles/.zshrc ~
 ln -s $HOME/dotfiles/.p10k.zsh ~
 ln -s $HOME/dotfiles/themes ~/.local/share 
 ln -s $HOME/dotfiles/icons ~/.local/share
 ln -s $HOME/dotfiles/fonts ~/.local/share 
+sudo ln -s $HOME/dotfiles/lf-ueberzug/lf-ueberzug-cleaner /usr/local/bin/
+sudo ln -s $HOME/dotfiles/lf-ueberzug/lf-ueberzug /usr/local/bin/
+sudo ln -s $HOME/dotfiles/lf-ueberzug/lf-ueberzug-previewer /usr/local/bin/
 touch ~/.histfile
 
 #dwm 
