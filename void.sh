@@ -27,7 +27,6 @@ ln -s $HOME/dotfiles/dunst ~/.config
 ln -s $HOME/dotfiles/zsh ~/.config
 ln -s $HOME/dotfiles/neofetch ~/.config
 ln -s $HOME/dotfiles/picom ~/.config
-ln -s $HOME/dotfiles/ranger ~/.config
 ln -s $HOME/dotfiles/rofi ~/.config
 ln -s $HOME/dotfiles/lf-ueberzug ~/.config
 ln -s $HOME/dotfiles/bottom ~/.config
