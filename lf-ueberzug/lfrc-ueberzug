@@ -74,7 +74,7 @@ map au unarchive
 
 # Basic Functions
 map . set hidden!
-map DD delete
+map dd delete
 map p paste
 map x cut
 map y copy
@@ -85,7 +85,7 @@ map md mkdir
 map bg setwallpaper
 map C clear
 
-map dd trash
+map DD trash
 map dr restore_trash
 
 # Movement
