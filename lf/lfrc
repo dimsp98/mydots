@@ -199,3 +199,9 @@ map gu cd /usr
 
 map \;j cd ~
 
+#quit
+map x quitcd
+cmd quitcd ${{
+	echo "1" > "$LF_TEMPDIR"/cdtolastdir
+	lf -remote "send $id quit"
+}}
