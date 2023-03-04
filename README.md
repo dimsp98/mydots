@@ -16,3 +16,4 @@ File manager: [lf](https://github.com/gokcehan/lf.git) with [lf-ueberzug](https:
  
 Color scheme: [Catppuccin Mocha](https://github.com/catppuccin/catppuccin)
 
+![schreenshot](https://user-images.githubusercontent.com/125738354/222923847-3557ab23-45fd-40d9-8e6f-e68b7a859970.png)
