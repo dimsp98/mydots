@@ -27,6 +27,7 @@ source ~/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
 # Source plugins
 source ~/.config/zsh/.profile
+source ~/.config/zsh/.zshenv
 source ~/.config/zsh/sudo.plugin.zsh
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
