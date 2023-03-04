@@ -64,13 +64,17 @@ map "'"
 map '"'
 map d
 
-map c $vscodium "$f"
-
+# Archive Mappings
+map az zip
+map at tar
+map ag targz
+map ab targz
+map au unarchive
 map au unarchive
 
 # Basic Functions
 map . set hidden!
-map DD trash
+map DD delete
 map p paste
 map x cut
 map y copy
