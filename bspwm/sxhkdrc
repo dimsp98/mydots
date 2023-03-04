@@ -7,7 +7,7 @@ super + Return
 
 # CLI file manager
 super + e
- st -e ranger
+ st -e lf-ueberzug
 
 # Screenshot
 Print
