@@ -22,6 +22,18 @@ compinit
 export TERM="st-256color"                      # getting proper colors
 export PATH="$HOME/.local/bin":$PATH
 
+#lf ueberzug
+# zshrc or bashrc
+lf () {
+	LF_TEMPDIR="$(mktemp -d -t lf-tempdir-XXXXXX)"
+	LF_TEMPDIR="$LF_TEMPDIR" lf-run -last-dir-path="$LF_TEMPDIR/lastdir" "$@"
+	if [ "$(cat "$LF_TEMPDIR/cdtolastdir" 2>/dev/null)" = "1" ]; then
+		cd "$(cat "$LF_TEMPDIR/lastdir")"
+	fi
+	rm -r "$LF_TEMPDIR"
+	unset LF_TEMPDIR
+}
+
 # zsh-sybntax-highlighting theme 
 source ~/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
