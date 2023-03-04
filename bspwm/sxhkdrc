@@ -3,11 +3,11 @@ super + Escape
 
 # terminal
 super + Return
-  $TERMINAL
+  st
 
 # CLI file manager
 super + e
-  $TERMINAL -e lf-ueberzug
+ st -e lf-ueberzug
 
 # Screenshot
 Print
