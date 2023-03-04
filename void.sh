@@ -3,8 +3,7 @@
 #Install Dependencies
 cd ~ && echo "Installing Dependencies"
 sudo xbps-install -Suv 
-sudo xbps-install nodejs pnpm xorg base-devel elogind picom git bat xdg-user-dirs papirus-icon-theme lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm ranger htop pulseaudio pavucontrol alsa-plugins-pulseaudio openjdk-jre cmus rofi sxhkd xclip dunst mpv maim syncthing libreoffice zip unzip gzip udisks2 neofetch firefox sddm qt5-graphicaleffects qt5-quickcontrols2 zsh neovim polybar jsoncpp feh ueberzug zathura-pdf-mupdf hplip cups simple-scan ntfs-3g 
-xdg-user-dirs-update 
+sudo xbps-install nodejs pnpm xorg base-devel elogind picom git bat papirus-icon-theme lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm lf htop pulseaudio pavucontrol alsa-plugins-pulseaudio openjdk-jre cmus rofi sxhkd xclip dunst mpv maim syncthing libreoffice zip unzip gzip udisks2 neofetch firefox sddm qt5-graphicaleffects qt5-quickcontrols2 zsh neovim polybar jsoncpp feh ueberzug zathura-pdf-mupdf hplip cups simple-scan ntfs-3g 
 cd ~ && git clone https://github.com/void-linux/void-packages.git
 cd void-packages
 ./xbps-src binary-bootstrap
@@ -28,7 +27,7 @@ ln -s $HOME/dotfiles/dunst ~/.config
 ln -s $HOME/dotfiles/zsh ~/.config
 ln -s $HOME/dotfiles/neofetch ~/.config
 ln -s $HOME/dotfiles/picom ~/.config
-ln -s $HOME/dotfiles/ranger ~/.config
+ln -s $HOME/dotfiles/lf ~/.config
 ln -s $HOME/dotfiles/rofi ~/.config
 ln -s $HOME/dotfiles/bottom ~/.config
 ln -s $HOME/dotfiles/.zshrc ~
@@ -36,6 +35,9 @@ ln -s $HOME/dotfiles/.p10k.zsh ~
 ln -s $HOME/dotfiles/themes ~/.local/share 
 ln -s $HOME/dotfiles/icons ~/.local/share
 ln -s $HOME/dotfiles/fonts ~/.local/share 
+sudo ln -s $HOME/dotfiles/lf-ueberzug/lf-ueberzug-cleaner /usr/local/bin/
+sudo ln -s $HOME/dotfiles/lf-ueberzug/lf-ueberzug /usr/local/bin/
+sudo ln -s $HOME/dotfiles/lf-ueberzug/lf-ueberzug-previewer /usr/local/bin/
 touch ~/.histfile
 
 #dwm 
