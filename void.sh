@@ -3,7 +3,7 @@
 #Install Dependencies
 cd ~ && echo "Installing Dependencies"
 sudo xbps-install -Suv 
-sudo xbps-install nodejs pnpm xorg base-devel elogind picom git bat papirus-icon-theme lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm lf htop pulseaudio pavucontrol alsa-plugins-pulseaudio openjdk-jre cmus rofi sxhkd xclip dunst mpv maim syncthing libreoffice zip unzip gzip udisks2 neofetch firefox sddm qt5-graphicaleffects qt5-quickcontrols2 zsh neovim polybar jsoncpp feh ueberzug zathura-pdf-mupdf hplip cups simple-scan ntfs-3g 
+sudo xbps-install nodejs pnpm xorg base-devel elogind picom git bat papirus-icon-theme ffmpeg ghostscript lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm lf htop pulseaudio pavucontrol alsa-plugins-pulseaudio openjdk-jre cmus rofi sxhkd xclip dunst mpv maim syncthing libreoffice zip unzip gzip udisks2 neofetch firefox sddm qt5-graphicaleffects qt5-quickcontrols2 zsh neovim polybar jsoncpp feh ueberzug zathura-pdf-mupdf hplip cups simple-scan ntfs-3g 
 cd ~ && git clone https://github.com/void-linux/void-packages.git
 cd void-packages
 ./xbps-src binary-bootstrap
