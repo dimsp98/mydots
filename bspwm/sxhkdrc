@@ -11,7 +11,7 @@ super + e
 
 # Screenshot
 Print
- ~/.config/rofi/applets/bin/screenshot.sh
+ maim -s ~/Pictures/Screenshots/$(date +%s).png && notify-send "Screenshot saved"
 
 # Rofi scripts and dmenu
 super + space
