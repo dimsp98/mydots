@@ -12,8 +12,7 @@ Terminal: [st](https://st.suckless.org/)
 
 Shell: [zsh](https://www.zsh.org/) with [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
-File manager: [ranger](https://github.com/ranger/ranger)
-
+File manager: [lf](https://github.com/gokcehan/lf.git) with [lf-ueberzug](https://github.com/gokcehan/lf.git)
+ 
 Color scheme: [Catppuccin Mocha](https://github.com/catppuccin/catppuccin)
 
-![screenshot](https://user-images.githubusercontent.com/125738354/222043500-37b638e2-8e2a-47cf-be27-ddb9a5e8b28c.png)
