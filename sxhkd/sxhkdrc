@@ -1,0 +1,42 @@
+super + Escape
+  pkill -USR1 -x sxhkd
+
+# terminal
+super + Return
+  st
+
+# CLI file manager
+super + e
+ st -e ranger
+
+# Screenshot
+Print
+ ~/.config/rofi/applets/bin/screenshot.sh
+
+#rofi launcher
+alt + space
+ ~/.config/rofi/launchers/type-1/launcher.sh
+
+#dmenu
+super + d
+  dmenu_run -c -F
+
+# Media controls
+XF86AudioRaiseVolume 
+  pactl set-sink-volume 0 +5% #increase sound volume
+
+XF86AudioLowerVolume
+  pactl set-sink-volume 0 -5% #decrease sound volume
+
+XF86AudioMute 
+  pactl set-sink-mute 0 toggle #mute sound
+
+XF86MonBrightnessUp 
+  lux -a 10%
+
+XF86MonBrightnessDown 
+  lux -s 10%
+
+# Browser
+super + b
+  firefox
