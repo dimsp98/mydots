@@ -87,7 +87,7 @@ hc mousebind $Mod-Button2 zoom
 hc mousebind $Mod-Button3 resize
 
 #scripts
-hc keybind $Mod-Mod1-Return spawn "$HOME/.dmenu/dmenu-hc-layouts.sh"
+hc keybind $Mod-Mod1-Return spawn "$HOME/dotfiles/suckless/dmenu/dmenu-hc-layouts.sh"
 
 # focus
 hc keybind $Mod-BackSpace cycle_monitor
