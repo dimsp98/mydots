@@ -2,7 +2,7 @@
 
 #Install Dependencies
 cd ~ && echo "Installing Dependencies"
-sudo xbps-install syncthing ImageMagick void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree nodejs pnpm xorg xf86-video-nouveau base-devel git bat papirus-icon-theme ranger ueberzug ffmpeg ghostscript zip unzip gzip lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm herbstluftwm htop pulseaudio pamixer pavucontrol alsa-plugins-pulseaudio openjdk-jre cmus sxhkd xclip dunst mpv maim libreoffice pfetch firefox sddm qt5-graphicaleffects qt5-quickcontrols2 zsh neovim polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
+sudo xbps-install picom syncthing ImageMagick void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree nodejs pnpm xorg xf86-video-nouveau base-devel git bat papirus-icon-theme ranger ueberzug ffmpeg ghostscript zip unzip gzip lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm herbstluftwm htop pulseaudio pamixer pavucontrol alsa-plugins-pulseaudio openjdk-jre cmus sxhkd xclip dunst mpv maim libreoffice pfetch firefox sddm qt5-graphicaleffects qt5-quickcontrols2 zsh neovim polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
 
 #creating directories
 echo "Creating directories"
@@ -31,13 +31,6 @@ install_void_packages() {
 		echo -e "void-packages already installes, skipping"
 	fi
 }
-
-#compositor
-cd void-packages
-git clone https://github.com/ibhagwan/picom-ibhagwan-template
-mv picom-ibhagwan-template ./srcpkgs/picom-ibhagwan
-./xbps-src pkg picom-ibhagwan
-sudo xbps-install --repository=hostdir/binpkgs picom-ibhagwan
 
 #Install and apply my dotfiles
 cd ~/dotfiles && echo "Creating symlinks"
