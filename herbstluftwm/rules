@@ -1,4 +1,6 @@
 hc unrule -F
+
+hc rule class~'(zoom)' tag=1 switchtag=on focus=on
 hc rule class~'(Firefox)' tag=2 switchtag=on focus=on
 hc rule class~'(Soffice)' tag=5 switchtag=on focus=on
 hc rule class~'(Zathura)' tag=4 switchtag=on focus=on
