@@ -1,6 +1,6 @@
 hc attr theme.tiling.reset 1
 hc attr theme.floating.reset 1
-hc set frame_border_active_color '#94e2d5'
+hc set frame_border_active_color '#74c7ec'
 hc set frame_border_normal_color '#313244'
 #hc set frame_bg_normal_color '#313244'
 #hc set frame_bg_active_color '#74c7ec'
