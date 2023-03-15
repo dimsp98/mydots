@@ -8,16 +8,6 @@ export PF_COL1="2"
 export PF_COL2="9"
 export PF_COL3="2"
 
-# Default Apps
-export EDITOR="nvim"
-export READER="zathura"
-export VISUAL="nvim"
-export TERMINAL="st"
-export BROWSER="firefox"
-export VIDEO="mpv"
-export IMAGE="ueberzug"
-export OPENER="xdg-open"
-
 # lf icons
 export LF_ICONS="\
 tw=:\

@@ -14,17 +14,27 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/dimitris/.zshrc'
-
 autoload -Uz compinit
 compinit
 
+# Default Apps
+export EDITOR="nvim"
+export READER="zathura"
+export VISUAL="nvim"
+export TERMINAL="st"
+export BROWSER="firefox"
+export VIDEO="mpv"
+export IMAGE="ueberzug"
+export OPENER="xdg-open"
+
 #export
+export XDG_CONFIG_HOME="$HOME/.config"
+export ZDOTDIR="$HOME/.config/zsh/"
 export TERM="st-256color"                      # getting proper colors
 export PATH="$HOME/.local/bin":$PATH
 
 # zsh-sybntax-highlighting theme 
 source ~/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
-
 # Source plugins
 source ~/.config/zsh/.profile
 source ~/.config/zsh/.zshenv
