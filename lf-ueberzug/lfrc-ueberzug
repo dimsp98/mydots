@@ -9,7 +9,7 @@ set shell zsh
 set truncatechar '⋯'
 
 # Yank Path
-cmd yank-dirname $dirname -- "$f" | head -c-1 | xclip -i -selection clipboard
+cmd yank-path $printf '%s' "$fx" | xclip -i -selection clipboard
 
 # Custom Functions
 cmd mkdir ${{
@@ -148,7 +148,7 @@ map P :link
 map p paste 
 map x cut
 map y copy
-map yp yank-dirname
+map Y yank-path
 map <enter> open
 map R reload
 map mf mkfile
