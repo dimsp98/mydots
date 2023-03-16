@@ -43,7 +43,6 @@ ln -s $HOME/dotfiles/bottom ~/.config
 ln -s $HOME/dotfiles/bspwm ~/.config
 ln -s $HOME/dotfiles/dunst ~/.config
 ln -s $HOME/dotfiles/htop ~/.config
-ln -s $HOME/dotfiles/lf ~/.config
 ln -s $HOME/dotfiles/lf-ueberzug ~/.config
 ln -s $HOME/dotfiles/mimeapps.list ~/.config
 ln -s $HOME/dotfiles/picom ~/.config
@@ -56,6 +55,7 @@ ln -s $HOME/dotfiles/.p10k.zsh ~
 ln -s $HOME/dotfiles/.zshrc ~
 sudo ln -sf $HOME/dotfiles/fonts /usr/share
 sudo ln -sf $HOME/dotfiles/icons /usr/share
+sudo ln -sf $HOME/dotfiles/lf-ueberzug/* /usr/local/bin
 sudo ln -sf $HOME/dotfiles/themes /usr/share
 touch ~/.histfile
 
