@@ -19,7 +19,7 @@ create_default_directories() {
 	mkdir -p "$HOME"/Videos
 }
 
-#void-packages
+#AUR helper
 install_paru() {
 	if
 		! command -v "cd paru" &
