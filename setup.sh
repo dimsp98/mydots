@@ -57,22 +57,6 @@ sudo ln -sf $HOME/dotfiles/icons /usr/share
 sudo ln -sf $HOME/dotfiles/themes /usr/share
 touch ~/.histfile
 
-#dwm
-echo "installing dwm"
-cd ~ && git clone https://github.com/dimsp98/dwm.git ~/.dwm
-cd .dwm && sudo make clean install
-cd ~
-git clone https://github.com/dimsp98/slstatus.git ~/slstatus
-cd slstatus && sudo make clean install
-sudo touch /usr/share/xsessions/dwm.desktop
-echo "[Desktop Entry]
-Encoding=UTF-8
-Name=Dwm
-Comment=Dynamic window manager
-Exec=dwm
-Icon=dwm
-Type=XSession" | sudo tee -a /usr/share/xsessions/dwm.desktop
-
 #St and dmenu
 cd ~/dotfiles/suckless/st && sudo make clean install
 cd ~/dotfiles/suckless/dmenu && sudo make clean install
