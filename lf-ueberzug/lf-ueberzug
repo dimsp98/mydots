@@ -13,7 +13,7 @@ export OPENER="xdg-open"
 cleanup() {
 	lf-ueberzug-cleaner
 	pkill "$UEBERZUGPID"
-	pkill -f "tail -f $LF_UEBERZUG_TEMPDIR/fifo"
+	pkill "tail -f $LF_UEBERZUG_TEMPDIR/fifo"
 	rm -rf "$LF_UEBERZUG_TEMPDIR"
 }
 trap cleanup INT HUP
@@ -30,5 +30,5 @@ UEBERZUGPID=$!
 # lf-ueberzug-cleaner and lf-ueberzgu-previewer. If no startup directory is
 # provided, start lf in the examples directory.
 export PATH="$PATH:${ZSH_ARGZERO:A:h}"
-lf -config "${ZSH_ARGZERO:A:h}/lfrc-ueberzug" "${1:-"${ZSH_ARGZERO:A:h}"}"
+lf -config "${ZSH_ARGZERO:A:h}/lfrc-ueberzug" "$HOME"
 cleanup
