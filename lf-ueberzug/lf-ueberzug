@@ -10,10 +10,13 @@ export VIDEO="mpv"
 export IMAGE="ueberzug"
 export OPENER="xdg-open"
 
+
+
 cleanup() {
 	lf-ueberzug-cleaner
-	pkill "$UEBERZUGPID"
-	pkill "tail -f $LF_UEBERZUG_TEMPDIR/fifo"
+	pkill -f lf
+    pkill -f "$UEBERZUGPID"
+	pkill -f "tail -f $LF_UEBERZUG_TEMPDIR/fifo"
 	rm -rf "$LF_UEBERZUG_TEMPDIR"
 }
 trap cleanup INT HUP
