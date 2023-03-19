@@ -9,6 +9,10 @@ super + Return
 super + e
     st -e lf-ueberzug
 
+# CLI Music Player
+super + p
+    st -e cmus
+
 # Screenshot
 Print
     ~/.config/rofi/applets/bin/screenshot.sh

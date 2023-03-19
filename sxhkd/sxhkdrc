@@ -5,6 +5,10 @@ super + Escape
 super + Return
   st
 
+#CLI Music Player
+super + p 
+    st -e cmus
+
 # CLI file manager
 super + e
     st -e lf-ueberzug
