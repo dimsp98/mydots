@@ -7,7 +7,7 @@ super + Return
 
 #CLI Music Player
 super + p 
-    st -e cmus
+    st -e ncmpcpp
 
 # CLI file manager
 super + e
