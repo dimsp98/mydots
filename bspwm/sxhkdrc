@@ -11,7 +11,7 @@ super + e
 
 # CLI Music Player
 super + p
-    st -e cmus
+    st -e ncmpcpp
 
 # Screenshot
 Print
