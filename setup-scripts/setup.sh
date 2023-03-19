@@ -4,7 +4,7 @@
 cd ~ && echo "Installing Dependencies"
 sudo pacman -S neovim
 sudo nvim /etc/pacman.conf
-sudo pacman -S --needed networkmanager network-manager-applet networkmanager-openvpn syncthing imagemagick nodejs pnpm xorg xf86-video-nouveau base-devel picom git bat papirus-icon-theme lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance xorg-xsetroot curl openssh wget bspwm htop pulseaudio pamixer pavucontrol pulseaudio-alsa jre-openjdk cmus sxhkd xclip dunst mpv maim libreoffice-fresh firefox sddm qt5-graphicaleffects qt5-quickcontrols2 zsh polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
+sudo pacman -S --needed syncthing imagemagick nodejs pnpm xorg xf86-video-nouveau base-devel picom git bat papirus-icon-theme lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance xorg-xsetroot curl openssh wget bspwm htop pulseaudio pamixer pavucontrol pulseaudio-alsa jre-openjdk cmus sxhkd xclip dunst mpv maim libreoffice-fresh firefox sddm qt5-graphicaleffects qt5-quickcontrols2 zsh polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
 
 #creating directories
 echo "Creating directories"
@@ -45,6 +45,8 @@ ln -s $HOME/dotfiles/dunst ~/.config
 ln -s $HOME/dotfiles/htop ~/.config
 ln -s $HOME/dotfiles/lf-ueberzug ~/.config
 ln -s $HOME/dotfiles/mimeapps.list ~/.config
+ln -s $HOME/dotfiles/mpd ~/.config
+ln -s $HOME/dotfiles/ncmpcpp ~/.config
 ln -s $HOME/dotfiles/picom ~/.config
 ln -s $HOME/dotfiles/polybar ~/.config
 ln -s $HOME/dotfiles/rofi ~/.config

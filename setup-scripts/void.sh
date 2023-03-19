@@ -2,7 +2,7 @@
 
 #Install Dependencies
 cd ~ && echo "Installing Dependencies"
-sudo xbps-install picom NetworkManager NetworkManager-openvpn network-manager-applet syncthing ImageMagick void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree nodejs pnpm xorg xf86-video-nouveau base-devel git bat papirus-icon-theme lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm herbstluftwm htop pulseaudio pamixer pavucontrol alsa-plugins-pulseaudio openjdk-jre cmus sxhkd xclip dunst mpv maim libreoffice pfetch firefox sddm qt5-graphicaleffects qt5-quickcontrols2 zsh neovim polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
+sudo xbps-install picom syncthing ImageMagick void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree nodejs pnpm xorg xf86-video-nouveau base-devel git bat papirus-icon-theme lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm herbstluftwm htop pulseaudio pamixer pavucontrol alsa-plugins-pulseaudio openjdk-jre mpd ncmpcpp sxhkd xclip dunst mpv maim libreoffice pfetch firefox sddm qt5-graphicaleffects qt5-quickcontrols2 zsh neovim polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
 
 #creating directories
 echo "Creating directories"
@@ -44,6 +44,8 @@ ln -s $HOME/dotfiles/herbstluftwm ~/.config
 ln -s $HOME/dotfiles/htop ~/.config
 ln -s $HOME/dotfiles/lf-ueberzug ~/.config
 ln -s $HOME/dotfiles/mimeapps.list ~/.config
+ln -s $HOME/dotfiles/mpd ~/.config
+ln -s $HOME/dotfiles/ncmpcpp ~/.config
 ln -s $HOME/dotfiles/picom ~/.config
 ln -s $HOME/dotfiles/polybar ~/.config
 ln -s $HOME/dotfiles/rofi ~/.config
