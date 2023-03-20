@@ -32,16 +32,16 @@ browser_display_mode  = "columns"
 colors_enabled 		  = "yes"
 #user_interface 	  = classic
 user_interface 		  = alternative
-volume_color 		  = 7
+volume_color 		  = blue
 
 ### Window ###
 song_window_title_format = "{%a - }{%t}|{%f}"
 statusbar_visibility 	 = "yes"
-header_visibility 		 = "yes"
-titles_visibility 		 = "yes"
+header_visibility 		 = "no"
+titles_visibility 		 = "no"
 
 ### Progress bar ###
-progressbar_look 			= "▂▂▂"
+progressbar_look = "━━─"
 progressbar_color 			= "black"
 progressbar_elapsed_color   = "red"
 
@@ -51,7 +51,7 @@ alternative_header_first_line_format  = $b$(blue)󰫔$/b  $b$(2){%t}|{%f}$/b $/b
 alternative_header_second_line_format = {$b{$(blue) 󰋄  $(2)%a$9}{ $(2)- $(blue)󰀥  $(2)%a$9}}
 
 ### Song list ###
-song_status_format		 = "$7%t"
+song_status_format		 = "$(blue)%t"
 song_list_format 		 = $(blue){%a}$(end) $(red){%t}$(end)$(red)({%l})$(end)
 song_library_format 	 = {{%a - %t} (%b)}|{%f}
 song_columns_list_format = "(49)[5]{tr}$C(5f)[red]{l}(50)[blue]{a}"
@@ -62,5 +62,5 @@ current_item_prefix                 = >>
 current_item_suffix                 =  
 current_item_inactive_column_prefix = 
 current_item_inactive_column_suffix = >> 
-color1 = "white"
+color1 = "blue"
 color2 = "red"
