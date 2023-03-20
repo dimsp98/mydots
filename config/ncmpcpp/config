@@ -48,14 +48,14 @@ progressbar_elapsed_color   = "red"
 
 ### Alternative UI ###
 alternative_ui_separator_color 		  = "black"
-alternative_header_first_line_format  = $b$(blue)󰫔$/b  $b$(white){%t}|{%f}$/b $/b 
-alternative_header_second_line_format = {$b{$(blue) 󰋄  $(white)%a$9}{ $(white)- $(blue)󰀥  $(white)%a$9}}
+alternative_header_first_line_format  = $b$(blue)󰫔$/b  $b$(2){%t}|{%f}$/b $/b 
+alternative_header_second_line_format = {$b{$(blue) 󰋄  $(2)%a$9}{ $(2)- $(blue)󰀥  $(2)%a$9}}
 
 ### Song list ###
 song_status_format		 = "$7%t"
 song_list_format 		 = $(blue){%a}$(end) $(red){%t}$(end)$(red)({%l})$(end)
 song_library_format 	 = {{%a - %t} (%b)}|{%f}
-song_columns_list_format = "(49)[7]{tr}$C(5f)[white]{l}(50)[blue]{a}"
+song_columns_list_format = "(49)[5]{tr}$C(5f)[red]{l}(50)[blue]{a}"
 
 ### Colors ###
 main_window_color 					= "red"
