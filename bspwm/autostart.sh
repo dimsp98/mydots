@@ -18,9 +18,6 @@ pgrep -x udiskie > /dev/null || udiskie &
 #clipboard 
 xclip &
 
-#mpd 
-pgrep -x mpd > /dev/null || mpd $HOME/.config/mpd/mpd.conf
-
 #change language 
 setxkbmap -model pc104 -layout us,gr -option 'grp:alt_shift_toggle' &
 
