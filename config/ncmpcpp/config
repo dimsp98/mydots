@@ -47,15 +47,15 @@ alternative_header_second_line_format = {$b{$(blue) 󰋄  $(white)%a$9}{ $(white
 
 ### Song list ###
 song_status_format		 = "$7%t"
-song_list_format 		 = "$(blue){%a}$(end) $(red){%t}$(end)$(red)({%l})$(end)
+song_list_format 		 = $(blue){%a}$(end) $(red){%t}$(end)$(red)({%l})$(end)
 song_library_format 	 = {{%a - %t} (%b)}|{%f}
 song_columns_list_format = "(49)[7]{tr}$C(5f)[white]{l}(50)[blue]{a}"
 
 ### Colors ###
 main_window_color 					= "red"
 current_item_prefix                 = >>
-current_item_suffix                 = $(end)
-current_item_inactive_column_prefix = red
-current_item_inactive_column_suffix = red
+current_item_suffix                 =  
+current_item_inactive_column_prefix = 
+current_item_inactive_column_suffix = >> 
 color1 = "white"
 color2 = "red"
