@@ -36,27 +36,12 @@ install_void_packages() {
 cd ~/dotfiles && echo "Creating symlinks"
 git submodule update --init
 ln -s $HOME/dotfiles/Backgrounds ~/Pictures
-ln -s $HOME/dotfiles/bat ~/.config
-ln -s $HOME/dotfiles/bottom ~/.config
-ln -s $HOME/dotfiles/bspwm ~/.config
-ln -s $HOME/dotfiles/dunst ~/.config
-ln -s $HOME/dotfiles/herbstluftwm ~/.config
-ln -s $HOME/dotfiles/htop ~/.config
-ln -s $HOME/dotfiles/lf-ueberzug ~/.config
-ln -s $HOME/dotfiles/mimeapps.list ~/.config
-ln -s $HOME/dotfiles/mpd ~/.config
-ln -s $HOME/dotfiles/ncmpcpp ~/.config
-ln -s $HOME/dotfiles/picom ~/.config
-ln -s $HOME/dotfiles/polybar ~/.config
-ln -s $HOME/dotfiles/rofi ~/.config
-ln -s $HOME/dotfiles/sxhkd ~/.config
-ln -s $HOME/dotfiles/zathura ~/.config
-ln -s $HOME/dotfiles/zsh ~/.config
+ln -s $HOME/dotfiles/config/* ~/.config
 ln -s $HOME/dotfiles/.p10k.zsh ~
 ln -s $HOME/dotfiles/.zshrc ~
 sudo ln -sf $HOME/dotfiles/fonts /usr/share
 sudo ln -sf $HOME/dotfiles/icons /usr/share
-sudo ln -sf $HOME/dotfiles/lf-ueberzug/* /usr/local/bin
+sudo ln -sf $HOME/dotfiles/config/lf-ueberzug/* /usr/local/bin
 sudo ln -sf $HOME/dotfiles/themes /usr/share
 touch ~/.histfile
 
@@ -91,4 +76,3 @@ echo -e "Setting up servicces"
 sudo ln -s /etc/sv/cupsd /var/service
 sudo ln -s /etc/sv/dbus /var/service
 sudo ln -s /etc/sv/sddm /var/service
-sudo ln -s /etc/sv/NetworkManager /var/service
