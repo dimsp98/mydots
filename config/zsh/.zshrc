@@ -6,9 +6,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+#HISTFILE=~/.histfile
+#HISTSIZE=1000
+#SAVEHIST=1000
 setopt autocd
 bindkey -e
 # End of lines configured by zsh-newuser-install
