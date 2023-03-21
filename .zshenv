@@ -11,8 +11,6 @@ export BROWSER="firefox"
 export VIDEO="mpv"
 export IMAGE="ueberzug"
 export OPENER="xdg-open"
-export LESSHISTFILE=-
-export HISTFILE=-
 
 #export
 export XDG_CONFIG_HOME="$HOME/.config"
