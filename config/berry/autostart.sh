@@ -25,4 +25,5 @@ setxkbmap -model pc104 -layout us,gr -option 'grp:alt_shift_toggle' &
 pgrep -x dunst > /dev/null || dunst -c ~/.config/dunst/dunstrc &
 
 #polybar 
-pgrep -x polybar > /dev/null || polybar -c ~/.config/polybar/config.ini &
+pkill polybar
+polybar -c ~/.config/berry/config.ini &
