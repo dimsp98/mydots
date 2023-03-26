@@ -36,10 +36,10 @@ XF86AudioMute
   pactl set-sink-mute 0 toggle #mute sound
 
 XF86MonBrightnessUp 
-  lux -a 10%
+  brightnessctl set +10%
 
 XF86MonBrightnessDown 
-  lux -s 10%
+  brightnessctl set 10%-
 
 # Browser
 super + b
