@@ -321,11 +321,11 @@ Vagrantfile             
 *.aac   
 *.au    
 *.flac  
-*.m4a   
+*.m4a   
 *.mid   
 *.midi  
 *.mka   
-*.mp3   
+*.mp3   
 *.mpc   
 *.ogg   
 *.ra    
