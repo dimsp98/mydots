@@ -48,24 +48,16 @@ cmd chmod ${{
   lf -remote 'send reload'
 }}
 
-cmd paste-override ${{
-	set -f
-	load=$(lf -remote "load")
-	mode=$(echo "$load" | head -1)
-	list=$(echo "$load" | sed '1d')
-	set -- _ $list; shift
-	[ $# -gt 0 ] || exit
-	case $mode in
-		copy)
-			rsync -r "$@" ./
-			;;
-		move)
-			rsync -r --remove-source-files "$@" ./
-			;;
-	esac
-	lf -remote 'save\nmove\n'
-	lf -remote "send $id load"
-	lf -remote "send $id echo \"\033[0;32mpasted $# file(s)\033[0m\""
+cmd paste-overwrite ${{
+mode=$(head -1 ~/.local/share/lf/files)
+list=$(sed 1d ~/.local/share/lf/files)
+if [ $mode = 'copy' ]; then
+        cp -r $list .
+    elif [ $mode = 'move' ]; then
+        mv $list .
+    fi
+    lf -remote 'send load'
+    lf -remote 'send clear'
 }}
 
 cmd dragon %dragon-drag-and-drop -a -x $fx
@@ -168,7 +160,7 @@ map r rename
 map P :link
 map p
 map pp paste 
-map po paste-override
+map po paste-overwrite
 map x cut
 map y copy
 map Y yank-path
