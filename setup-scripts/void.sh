@@ -2,7 +2,7 @@
 
 #Install Dependencies
 cd ~ && echo "Installing Dependencies"
-sudo xbps-install picom yt-dlp syncthing ImageMagick void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree nodejs pnpm xorg xf86-video-nouveau base-devel git bat papirus-icon-theme lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm htop pulseaudio pamixer pavucontrol alsa-plugins-pulseaudio openjdk-jre mpd ncmpcpp sxhkd xclip dunst mpv maim libreoffice pfetch firefox sddm qt5-graphicaleffects qt5-quickcontrols2 zsh neovim polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
+sudo xbps-install alacritty picom yt-dlp syncthing ImageMagick void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree nodejs pnpm xorg xf86-video-nouveau base-devel git bat papirus-icon-theme lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm htop pulseaudio pamixer pavucontrol alsa-plugins-pulseaudio openjdk-jre mpd ncmpcpp sxhkd xclip dunst mpv maim libreoffice pfetch firefox sddm qt5-graphicaleffects qt5-quickcontrols2 zsh neovim polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
 
 #creating directories
 echo "Creating directories"
@@ -44,8 +44,8 @@ sudo ln -sf $HOME/dotfiles/config/lf-ueberzug/* /usr/local/bin
 sudo ln -sf $HOME/dotfiles/themes /usr/share
 
 #St and dmenu
-cd ~/dotfiles/suckless/st && sudo make clean install
-cd ~/dotfiles/suckless/dmenu && sudo make clean install
+#cd ~/dotfiles/suckless/st && sudo make clean install
+#cd ~/dotfiles/suckless/dmenu && sudo make clean install
 
 #Change shell to zsh
 chsh -s /usr/bin/zsh && sudo chsh -s /usr/bin/zsh
