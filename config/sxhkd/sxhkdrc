@@ -7,11 +7,11 @@ super + Return
 
 #CLI Music Player
 super + p 
-    st -e ncmpcpp
+    alacritty -e ncmpcpp
 
 # CLI file manager
 super + e
-    st -e lf-ueberzug
+    alacritty -e lf-ueberzug
 
 # Screenshot
 Print
