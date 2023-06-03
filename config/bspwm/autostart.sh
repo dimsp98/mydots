@@ -5,6 +5,7 @@ xsetroot -cursor_name left_ptr &
 xrandr --output HDMI-1 --mode 1920x1080 --rate 60 &
 xset s off &
 xset -dpms &
+mpd --no-daemon $HOME/.config/mpd/mpd.conf &
 
 #compositor
 pgrep -x picom > /dev/null || picom --config ~/.config/picom/picom.conf &
