@@ -8,6 +8,7 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 #rules
 bspc rule -a Firefox desktop=^2 follow=false state=tiled
+bspc rule -a Thunar desktop=^3 follow=true state=tiled
 bspc rule -a Zathura desktop=^4 state=tiled follow=true
 bspc rule -a mpv desktop=^9 state=tiled follow=true
 bspc rule -a zoom desktop=^1 state=tiled follow=true
