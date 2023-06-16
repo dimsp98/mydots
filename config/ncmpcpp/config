@@ -59,8 +59,8 @@ song_columns_list_format = "(49)[5]{tr}$C(5f)[red]{l}(50)[blue]{a}"
 ### Colors ###
 main_window_color 					= "red"
 current_item_prefix                 = >>
-current_item_suffix                 =  
+current_item_suffix                 = 
 current_item_inactive_column_prefix = 
 current_item_inactive_column_suffix = >> 
-color1 = "blue"
+color1 = "red"
 color2 = "red"
