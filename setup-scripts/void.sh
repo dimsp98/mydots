@@ -33,10 +33,6 @@ sudo ln -sf $HOME/dotfiles/icons/* /usr/share/icons
 sudo ln -sf $HOME/dotfiles/config/lf-ueberzug/* /usr/local/bin
 sudo ln -sf $HOME/dotfiles/themes /usr/share/themes
 
-#St and dmenu
-#cd ~/dotfiles/suckless/st && sudo make clean install
-#cd ~/dotfiles/suckless/dmenu && sudo make clean install
-
 #Change shell to zsh
 chsh -s /usr/bin/zsh && sudo chsh -s /usr/bin/zsh
 
