@@ -6,7 +6,6 @@ sudo xbps-install alacritty picom yt-dlp syncthing ImageMagick void-repo-nonfree
 
 #creating directories
 echo "Creating directories"
-create_default_directories() {
 	mkdir -p $HOME/.config && ln -sf $HOME/dotfiles/user-dirs.dirs ~/.config
 	sudo mkdir -p /usr/local/bin
 	sudo mkdir -p /usr/share
@@ -15,15 +14,13 @@ create_default_directories() {
 	mkdir -p $HOME/Downloads
 	mkdir -p $HOME/Music
 	mkdir -p $HOME/Videos
-}
+ 
 #void-packages
-install_void_packages() {
 	echo -e "Installing void-packages"
 	cd ~ && git clone https://github.com/void-linux/void-packages.git
 	cd void-packages
 	./xbps-src binary-bootstrap
 	echo XBPS_ALLOW_RESTRICTED=yes >>etc/conf
-}
 
 #Install and apply my dotfiles
 cd ~/dotfiles && echo "Creating symlinks"
