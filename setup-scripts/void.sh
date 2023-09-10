@@ -6,21 +6,21 @@ sudo xbps-install rofi alacritty picom yt-dlp syncthing ImageMagick void-repo-no
 
 #creating directories
 echo "Creating directories"
-	mkdir -p $HOME/.config && ln -sf $HOME/dotfiles/user-dirs.dirs ~/.config
-	sudo mkdir -p /usr/local/bin
-	sudo mkdir -p /usr/share
-	mkdir -p $HOME/Pictures
-	mkdir -p $HOME/Documents
-	mkdir -p $HOME/Downloads
-	mkdir -p $HOME/Music
-	mkdir -p $HOME/Videos
- 
+mkdir -p $HOME/.config && ln -sf $HOME/dotfiles/user-dirs.dirs ~/.config
+sudo mkdir -p /usr/local/bin
+sudo mkdir -p /usr/share
+mkdir -p $HOME/Pictures
+mkdir -p $HOME/Documents
+mkdir -p $HOME/Downloads
+mkdir -p $HOME/Music
+mkdir -p $HOME/Videos
+
 #void-packages
-	echo -e "Installing void-packages"
-	cd ~ && git clone https://github.com/void-linux/void-packages.git
-	cd void-packages
-	./xbps-src binary-bootstrap
-	echo XBPS_ALLOW_RESTRICTED=yes >>etc/conf
+echo -e "Installing void-packages"
+cd ~ && git clone https://github.com/void-linux/void-packages.git
+cd void-packages
+./xbps-src binary-bootstrap
+echo XBPS_ALLOW_RESTRICTED=yes >>etc/conf
 
 #Install and apply my dotfiles
 cd ~/dotfiles && echo "Creating symlinks"
@@ -32,6 +32,9 @@ sudo ln -sf $HOME/dotfiles/fonts/* /usr/share/fonts
 sudo ln -sf $HOME/dotfiles/icons/* /usr/share/icons
 sudo ln -sf $HOME/dotfiles/config/lf-ueberzug/* /usr/local/bin
 sudo ln -sf $HOME/dotfiles/themes /usr/share/themes
+
+#Change theme for bat
+bat cache --build
 
 #Change shell to zsh
 chsh -s /usr/bin/zsh && sudo chsh -s /usr/bin/zsh
