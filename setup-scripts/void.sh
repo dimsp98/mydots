@@ -28,10 +28,10 @@ git submodule update --init
 ln -s $HOME/dotfiles/Backgrounds ~/Pictures
 ln -s $HOME/dotfiles/config/* ~/.config
 ln -s $HOME/dotfiles/.zshenv ~
-sudo ln -sf $HOME/dotfiles/fonts/* /usr/share/
-sudo ln -sf $HOME/dotfiles/icons/* /usr/share/
+sudo ln -sf $HOME/dotfiles/fonts/* /usr/share/fonts
+sudo ln -sf $HOME/dotfiles/icons/* /usr/share/icons
 sudo ln -sf $HOME/dotfiles/config/lf-ueberzug/* /usr/local/bin
-sudo ln -sf $HOME/dotfiles/themes /usr/share
+sudo ln -sf $HOME/dotfiles/themes /usr/share/themes
 
 #St and dmenu
 #cd ~/dotfiles/suckless/st && sudo make clean install
