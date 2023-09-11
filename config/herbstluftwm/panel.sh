@@ -7,6 +7,6 @@ pkill polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch polybar
-polybar -c $HOME/.config/herbstluftwm/config.ini &
+polybar -c $HOME/.config/herbstluftwm/bar.ini &
 
 echo "Polybar launched"
