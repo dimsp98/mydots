@@ -4,12 +4,12 @@
 cd ~ && echo "Installing Dependencies"
 sudo pacman -S neovim
 sudo nvim /etc/pacman.conf
-sudo pacman -S --needed syncthing imagemagick nodejs pnpm xorg xf86-video-nouveau base-devel picom git bat papirus-icon-theme lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance xorg-xsetroot curl openssh wget bspwm htop pulseaudio pamixer pavucontrol pulseaudio-alsa jre-openjdk cmus sxhkd xclip dunst mpv maim libreoffice-fresh firefox sddm qt5-graphicaleffects qt5-quickcontrols2 zsh polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
+sudo pacman -S --needed rofi syncthing alacritty yt-dlp imagemagick nodejs pnpm xorg xf86-video-nouveau base-devel picom git bat papirus-icon-theme lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance xorg-xsetroot curl openssh wget bspwm htop pulseaudio pamixer pavucontrol pulseaudio-alsa jre-openjdk cmus sxhkd xclip dunst mpv maim libreoffice-fresh firefox-developer-edition sddm qt5-graphicaleffects qt5-quickcontrols2 zsh polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
 
 #creating directories
 echo "Creating directories"
 create_default_directories() {
-	mkdir -p "$HOME"/.config && ln -sf $HOME/dotfiles/user-dirs.dirs ~/.config
+	mkdir -p $HOME/.config && ln -sf $HOME/dotfiles/user-dirs.dirs ~/.config
 	sudo mkdir -p /usr/local/bin
 	sudo mkdir -p /usr/share
 	mkdir -p "$HOME"/Pictures
@@ -40,14 +40,10 @@ git submodule update --init
 ln -s $HOME/dotfiles/Backgrounds ~/Pictures
 ln -s $HOME/dotfiles/config/* ~/.config
 ln -s $HOME/dotfiles/.zshenv ~
-sudo ln -sf $HOME/dotfiles/fonts /usr/share
-sudo ln -sf $HOME/dotfiles/icons /usr/share
+sudo ln -sf $HOME/dotfiles/fonts/* /usr/share/fonts
+sudo ln -sf $HOME/dotfiles/icons/* /usr/share/icons
 sudo ln -sf $HOME/dotfiles/config/lf-ueberzug/* /usr/local/bin
-sudo ln -sf $HOME/dotfiles/themes /usr/share
-
-#St and dmenu
-cd ~/dotfiles/suckless/st && sudo make clean install
-cd ~/dotfiles/suckless/dmenu && sudo make clean install
+sudo ln -sf $HOME/dotfiles/themes /usr/share/themes
 
 #Change shell to zsh
 chsh -s /usr/bin/zsh && sudo chsh -s /usr/bin/zsh
