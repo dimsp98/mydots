@@ -15,13 +15,6 @@ mkdir -p $HOME/Downloads
 mkdir -p $HOME/Music
 mkdir -p $HOME/Videos
 
-#void-packages
-echo -e "Installing void-packages"
-cd ~ && git clone https://github.com/void-linux/void-packages.git
-cd void-packages
-./xbps-src binary-bootstrap
-echo XBPS_ALLOW_RESTRICTED=yes >>etc/conf
-
 #Install and apply my dotfiles
 cd ~/dotfiles && echo "Creating symlinks"
 git submodule update --init
@@ -32,6 +25,13 @@ sudo ln -sf $HOME/dotfiles/fonts/* /usr/share/fonts
 sudo ln -sf $HOME/dotfiles/icons/* /usr/share/icons
 sudo ln -sf $HOME/dotfiles/config/lf-ueberzug/* /usr/local/bin
 sudo ln -sf $HOME/dotfiles/themes /usr/share/themes
+
+#void-packages
+echo -e "Installing void-packages"
+cd ~ && git clone https://github.com/void-linux/void-packages.git
+cd void-packages
+./xbps-src binary-bootstrap
+echo XBPS_ALLOW_RESTRICTED=yes >>etc/conf
 
 #Change theme for bat
 bat cache --build
