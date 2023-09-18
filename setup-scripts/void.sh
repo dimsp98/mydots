@@ -6,7 +6,7 @@ sudo xbps-install rofi alacritty picom yt-dlp syncthing ImageMagick void-repo-no
 
 #creating directories
 echo "Creating directories"
-mkdir -p $HOME/.config && ln -sf $HOME/dotfiles/user-dirs.dirs ~/.config
+mkdir -p $HOME/.config && ln -sf $HOME/dotfiles/config/user-dirs.dirs ~/.config
 sudo mkdir -p /usr/local/bin
 sudo mkdir -p /usr/share
 mkdir -p $HOME/Pictures

@@ -9,7 +9,7 @@ sudo pacman -S --needed rofi syncthing alacritty yt-dlp imagemagick nodejs pnpm 
 #creating directories
 echo "Creating directories"
 create_default_directories() {
-	mkdir -p $HOME/.config && ln -sf $HOME/dotfiles/user-dirs.dirs ~/.config
+	mkdir -p $HOME/.config && ln -sf $HOME/dotfiles/config/user-dirs.dirs ~/.config
 	sudo mkdir -p /usr/local/bin
 	sudo mkdir -p /usr/share
 	mkdir -p "$HOME"/Pictures
