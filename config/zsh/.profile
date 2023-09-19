@@ -1,6 +1,6 @@
 #aliases
-alias poweroff ='loginctl poweroff'
-alias reboot ='loginctl reboot'
+alias poweroff='loginctl poweroff'
+alias reboot='loginctl reboot'
 alias pull='git pull'
 alias ga='git add'
 alias gp='git push'
