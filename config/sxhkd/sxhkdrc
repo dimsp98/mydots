@@ -3,15 +3,15 @@ super + Escape
 
 # terminal
 super + Return
-  st 
-
+  alacritty
+  
 #CLI Music Player
 super + p 
-    st -e ncmpcpp
+    alacritty -e ncmpcpp
 
 # CLI file manager
 super + e
-    st -e lf-ueberzug
+    alacritty -e lf-ueberzug
 
 # Screenshot
 Print
@@ -23,7 +23,7 @@ alt + space
 
 #rofi powermenu
 alt + p
-  ~/.config/rofi/powermenu-systemd/type-1/powermenu.sh
+  ~/.config/rofi/powermenu/type-1/powermenu.sh
 
 #dmenu
 super + d
