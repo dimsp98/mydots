@@ -2,7 +2,7 @@
 
 #Install Dependencies
 cd ~ && echo "Installing Dependencies"
-sudo apt install rofi picom yt-dlp syncthing ImageMagick nodejs pnpm base-devel bat papirus-icon-theme lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm htop pulseaudio pamixer pavucontrol alsa-plugins-pulseaudio openjdk-jre mpd ncmpcpp sxhkd xclip dunst mpv maim pfetch neovim polybar jsoncpp feh hplip cups simple-scan ntfs-3g udisks2 zsh -y
+sudo apt install rofi picom yt-dlp syncthing ImageMagick nodejs pnpm base-devel bat papirus-icon-theme lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm htop pulseaudio pamixer pavucontrol alsa-plugins-pulseaudio mpd ncmpcpp sxhkd xclip dunst mpv maim pfetch neovim polybar jsoncpp feh hplip cups simple-scan ntfs-3g udisks2 zsh -y
 
 #creating directories
 echo "Creating directories"
