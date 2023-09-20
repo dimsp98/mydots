@@ -27,7 +27,7 @@ alt + space
 
 #rofi powermenu
 alt + p 
-    ~/.config/rofi/powermenu/type-1/powermenu.sh
+    ~/.config/rofi/powermenu-systemd/type-1/powermenu.sh
 
 #dmenu
 super + d
