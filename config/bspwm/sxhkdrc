@@ -25,6 +25,10 @@ Print
 alt + space
     ~/.config/rofi/launchers/type-1/launcher.sh
 
+#rofi powermenu
+alt + p 
+    ~/.config/rofi/powermenu/type-1/powermenu.sh
+
 #dmenu
 super + d
     dmenu_run -c -F
