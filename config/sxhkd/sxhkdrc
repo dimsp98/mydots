@@ -3,7 +3,7 @@ super + Escape
 
 # terminal
 super + Return
-  alacritty
+  st 
 
 #CLI Music Player
 super + p 
