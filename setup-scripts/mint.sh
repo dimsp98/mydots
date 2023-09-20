@@ -50,5 +50,4 @@ Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf
 #Setting up services
 echo -e "Setting up servicces"
 sudo systemctl enable cups
-sudo systemctl enable dbus
 sudo systemctl enable sddm
