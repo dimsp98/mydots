@@ -15,7 +15,7 @@ export OPENER="xdg-open"
 #export
 export XDG_CONFIG_HOME="$HOME/.config"
 export ZDOTDIR="$HOME/.config/zsh"
-export TERM="alacritty"                      # getting proper colors
+export TERM="st"                      # getting proper colors
 export PATH="$HOME/.local/bin":$PATH
 
 #pfetch
