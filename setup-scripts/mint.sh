@@ -31,6 +31,8 @@ bat cache --build
 
 #Change shell to zsh
 chsh -s /usr/bin/zsh && sudo chsh -s /usr/bin/zsh
+#Terminal
+git clone https://github.com/dimsp98/st ~/.st && cd .st && sudo make clean install 
 
 #NVim
 sudo apt-get install tree-sitter lazygit ripgrep sqlite fd yarn lldb nvm && cd ~
