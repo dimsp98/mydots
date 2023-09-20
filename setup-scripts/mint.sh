@@ -2,7 +2,7 @@
 
 #Install Dependencies
 cd ~ && echo "Installing Dependencies"
-sudo apt-get install elogind rofi alacritty picom yt-dlp syncthing ImageMagick void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree nodejs pnpm xorg xf86-video-nouveau base-devel git bat papirus-icon-theme lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm htop pulseaudio pamixer pavucontrol alsa-plugins-pulseaudio openjdk-jre mpd ncmpcpp sxhkd xclip dunst mpv maim libreoffice pfetch firefox sddm qt5-graphicaleffects qt5-quickcontrols2 zsh neovim polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
+sudo apt install rofi picom yt-dlp syncthing ImageMagick nodejs pnpm base-devel bat papirus-icon-theme lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm htop pulseaudio pamixer pavucontrol alsa-plugins-pulseaudio openjdk-jre mpd ncmpcpp sxhkd xclip dunst mpv maim pfetch neovim polybar jsoncpp feh hplip cups simple-scan ntfs-3g udisks2 zsh -y
 
 #creating directories
 echo "Creating directories"
@@ -40,14 +40,6 @@ else
 	bash -c "$(wget -O- https://raw.githubusercontent.com/ayamir/nvimdots/HEAD/scripts/install.sh)"
 fi
 
-#SDDM THEME
-cd ~
-sudo git clone https://github.com/keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme
-sudo cp /usr/share/sddm/themes/sddm-astronaut-theme/Fonts/* /usr/share/fonts/
-echo "[Theme]
-Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf
-
 #Setting up services
 echo -e "Setting up servicces"
 sudo systemctl enable cups
-sudo systemctl enable sddm
