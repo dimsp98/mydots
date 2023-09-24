@@ -25,7 +25,7 @@ ln -s $HOME/dotfiles/.zshenv ~
 sudo ln -sf $HOME/dotfiles/fonts/* /usr/share/fonts
 sudo ln -sf $HOME/dotfiles/icons/* /usr/share/icons
 sudo ln -sf $HOME/dotfiles/config/lf-ueberzug/* /usr/local/bin
-sudo ln -sf $HOME/dotfiles/themes /usr/share/themes
+sudo ln -sf $HOME/dotfiles/themes/* /usr/share/themes
 
 #void-packages
 echo -e "Installing void-packages"
