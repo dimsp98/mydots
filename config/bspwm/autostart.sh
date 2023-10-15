@@ -6,7 +6,7 @@ xrandr --output HDMI-1 --mode 1920x1080 --rate 60 &
 xset s off -dpms &
 
 #compositor
-pgrep -x picom > /dev/null || picom --config ~/.config/picom/picom.conf &
+pgrep -x picom > /dev/null || picom -b --config ~/.config/picom/picom.conf &
 
 #wallpaper
 feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/wallhaven-7pj8jo_2560x1440.png & 
