@@ -3,7 +3,7 @@
 #Install Dependencies
 cd ~ && echo "Installing Dependencies"
 sudo eopkg upgrade
-sudo eopkg install alacritty nemo rofi picom yt-dlp syncthing imagemagick nodejs pnpm xorg xf86-video-nouveau base-devel git bat papirus-icon-theme papirus-folders lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance xsetroot curl openssh wget bspwm htop pulseaudio pamixer pavucontrol alsa-plugins-pulseaudio openjdk-jre mpd ncmpcpp sxhkd xclip dunst mpv maim pfetch zsh neovim polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan
+sudo eopkg install alacritty nemo rofi picom yt-dlp syncthing imagemagick nodejs pnpm base-devel git bat papirus-icon-theme papirus-folders curl openssh wget mpd ncmpcpp sxhkd dunst mpv maim zsh neovim feh zathura-pdf-mupdf simple-scan
 
 #folder icons
 papirus-folders -C cyan --theme Papirus-Dark
