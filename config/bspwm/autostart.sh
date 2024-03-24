@@ -2,7 +2,7 @@
 
 #Xorg management
 xsetroot -cursor_name left_ptr &
-xrandr --output HDMI-1 --mode 1920x1080 --rate 60 &
+xrandr --output HDMI-1-2 --mode 1920x1080 --rate 120 --rotate normal &
 xset s off -dpms &
 
 #compositor
