@@ -22,8 +22,4 @@ setxkbmap -model pc104 -layout us,gr -option 'grp:alt_shift_toggle' &
 #notifications
 pgrep -x dunst > /dev/null || dunst -c ~/.config/dunst/dunstrc &
 
-#polybar 
-while pgrep -x polybar >/dev/null; do sleep 1; done
-  xrandr -q | awk '/ connected / {print $1}' | while read -r monitor _; do
-  polybar -r "$monitor" -c ~/.config/bspwm/bar.sh 
-done
+#polybar
