@@ -3,7 +3,7 @@
 #Install Dependencies
 cd ~ && echo "Installing Dependencies"
 sudo eopkg upgrade
-sudo eopkg install ranger lf alacritty rofi yt-dlp syncthing imagemagick nodejs git bat curl openssh wget mpd ncmpcpp mpv maim zsh neovim zathura-mupdf simple-scan openjdk-17
+sudo eopkg install htop neofetch ranger lf alacritty rofi yt-dlp syncthing imagemagick nodejs git bat curl openssh wget mpd ncmpcpp mpv maim zsh neovim zathura-mupdf simple-scan openjdk-17
 
 #Install and apply my dotfiles
 cd ~/dotfiles && echo "Creating symlinks"
