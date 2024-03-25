@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 #Xorg management
-xrandr --output HDMI-1-2 --mode 1920x1080 --primary --rate 120 --dpi 60 --rotate normal & 
+xrandr --output HDMI-1-2 --primary --mode 1920x1080 --primary --rate 120 --dpi 60 --rotate normal & 
 xrandr --output eDP-1-1 --off &
  
 #compositor
@@ -23,4 +23,7 @@ setxkbmap -model pc104 -layout us,gr -option 'grp:alt_shift_toggle' &
 pgrep -x dunst > /dev/null || dunst -c ~/.config/dunst/dunstrc &
 
 #polybar 
-~/.config/bspwm/bar.sh &
+while pgrep -x polybar >/dev/null; do sleep 1; done
+  xrandr -q | awk '/ connected / {print $1}' | while read -r monitor _; do
+  polybar -r "$monitor" -c ~/.config/bspwm/bar.sh 
+done
