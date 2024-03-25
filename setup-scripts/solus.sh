@@ -3,7 +3,7 @@
 #Install Dependencies
 cd ~ && echo "Installing Dependencies"
 sudo eopkg upgrade
-sudo eopkg install libxinerama-devel ranger lf lxappearance alacritty nemo rofi picom yt-dlp syncthing imagemagick nodejs pnpm git bat papirus-icon-theme curl openssh wget mpd ncmpcpp sxhkd dunst mpv maim zsh neovim feh zathura-pdf-mupdf simple-scan
+sudo eopkg install libxft-devel libxinerama-devel ranger lf lxappearance alacritty nemo rofi picom yt-dlp syncthing imagemagick nodejs pnpm git bat papirus-icon-theme curl openssh wget mpd ncmpcpp sxhkd dunst mpv maim zsh neovim feh zathura-pdf-mupdf simple-scan
 
 #folder icons
 papirus-folders -C cyan --theme Papirus-Dark
