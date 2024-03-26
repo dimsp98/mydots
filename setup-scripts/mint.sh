@@ -48,6 +48,10 @@ make -j$(nproc)
 sudo make install
 cd ~
 
+#lf file manager
+mkdir $HOME/.local/bin 
+curl -L https://github.com/gokcehan/lf/releases/latest/download/lf-linux-amd64.tar.gz | tar xzC ~/.local/bin
+
 #Change theme for bat
 bat cache --build
 
