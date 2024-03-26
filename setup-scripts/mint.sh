@@ -3,7 +3,7 @@
 #Install Dependencies
 cd ~ && echo "Installing Dependencies"
 sudo apt upgrade
-sudo apt install htop neofetch ranger lf rofi yt-dlp syncthing imagemagick nodejs curl openssh wget mpd ncmpcpp mpv maim zsh neovim zathura-mupdf
+sudo apt install htop neofetch ranger lf rofi yt-dlp syncthing imagemagick nodejs curl wget mpd ncmpcpp mpv maim zsh neovim zathura
 
 #Install and apply my dotfiles
 cd ~/dotfiles && echo "Creating symlinks"
