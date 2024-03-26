@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 #Xorg management
-xrandr --output HDMI-1-2 --primary --mode 1920x1080 --primary --rate 120 --dpi 60 --rotate normal --output eDP-1-1 --off & 
+xrandr --output HDMI-2 --primary --mode 1920x1080 --primary --rate 120 --dpi 60 --rotate normal --output eDP-1 --off & 
  
 #compositor
 pgrep -x picom > /dev/null || picom -b --config ~/.config/picom/picom.conf &
