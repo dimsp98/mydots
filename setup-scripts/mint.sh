@@ -2,8 +2,8 @@
 
 #Install Dependencies
 cd ~ && echo "Installing Dependencies"
-sudo eopkg upgrade
-sudo eopkg install htop neofetch ranger lf alacritty rofi yt-dlp syncthing imagemagick nodejs git bat curl openssh wget mpd ncmpcpp mpv maim zsh neovim zathura-mupdf simple-scan openjdk-17
+sudo apt upgrade
+sudo apt install htop neofetch ranger lf rofi yt-dlp syncthing imagemagick nodejs bat curl openssh wget mpd ncmpcpp mpv maim zsh neovim zathura-mupdf
 
 #Install and apply my dotfiles
 cd ~/dotfiles && echo "Creating symlinks"
@@ -23,4 +23,4 @@ bat cache --build
 chsh -s /usr/bin/zsh && sudo chsh -s /usr/bin/zsh
 
 #NVim
-sudo eopkg install tree-sitter lazygit ripgrep sqlite fd yarn lldb nvm && cd ~
+sudo apt install tree-sitter lazygit ripgrep sqlite fd yarn lldb nvm && cd ~
