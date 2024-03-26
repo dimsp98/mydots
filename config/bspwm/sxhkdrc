@@ -8,7 +8,6 @@ super + Return
 # CLI file manager
 super + e
 	alacritty -e lf
-
 alt + e	
 	alacritty -e ranger
 

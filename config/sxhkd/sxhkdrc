@@ -4,14 +4,17 @@ super + Escape
 # terminal
 super + Return
   alacritty
-  
+
 #CLI Music Player
 super + p 
-    alacritty -e ncmpcpp
+   alacritty -e ncmpcpp
 
 # CLI file manager
 super + e
     alacritty -e lf-ueberzug
+
+alt + e
+	alacritty -e ranger
 
 # Screenshot
 Print
