@@ -17,6 +17,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export ZDOTDIR="$HOME/.config/zsh"
 export PATH="$HOME/.local/bin":$PATH
 export TERM="xterm-kitty"
+export BAT_THEME="Catppuccin-mocha"
 
 #pfetch
 export PF_INFO="ascii title kernel os wm uptime pkgs memory"

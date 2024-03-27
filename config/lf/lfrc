@@ -1,6 +1,7 @@
-set previewer ~/.config/lf/preview.go
-set cleaner ~/.config/lf/clean.go
+set previewer ~/.config/lf/preview_kitty
+set cleaner ~/.config/lf/clean
 # Basic Settings
+set ignorecase true
 set hidden true
 set icons true
 set timefmt " 2006-01-02  15:04:05.000000000-0700"
