@@ -52,14 +52,6 @@ cd ~
 mkdir $HOME/.local/bin 
 curl -L https://github.com/gokcehan/lf/releases/latest/download/lf-linux-amd64.tar.gz | tar xzC ~/.local/bin
 
-#picom ibhagwan
-cd ~ && git clone https://github.com/ibhagwan/picom.git
-cd picom
-sudo apt install asciidoc libconfig-dev libdbus-1-dev libegl-dev libev-dev libgl-dev libepoxy-dev libpcre2-dev libpixman-1-dev libx11-xcb-dev libxcb1-dev libxcb-composite0-dev libxcb-damage0-dev libxcb-dpms0-dev libxcb-glx0-dev libxcb-image0-dev libxcb-present-dev libxcb-randr0-dev libxcb-render0-dev libxcb-render-util0-dev libxcb-shape0-dev libxcb-util-dev libxcb-xfixes0-dev libxext-dev meson ninja-build uthash-dev
-meson setup --buildtype=release build
-ninja -C build
-sudo ninja -C build install
-
 #Change theme for bat
 bat cache --build
 
