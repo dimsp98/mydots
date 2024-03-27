@@ -1,5 +1,5 @@
-set previewer ~/.config/lf/preview
-set cleaner ~/.config/lf/clean
+set previewer ~/.config/lf/preview.go
+set cleaner ~/.config/lf/clean.go
 # Basic Settings
 set hidden true
 set icons true
@@ -144,7 +144,7 @@ map dd delete
 map dr restore_trash
 map e nvim
 map r rename
-map P :link
+map P link
 map p paste 
 map x cut
 map y copy
