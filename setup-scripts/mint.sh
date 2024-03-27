@@ -8,7 +8,6 @@ sudo apt install kitty htop neofetch ranger rofi yt-dlp syncthing imagemagick no
 #Install and apply my dotfiles
 cd ~/dotfiles && echo "Creating symlinks"
 git submodule update --init
-ln -s $HOME/dotfiles/Backgrounds ~/Pictures
 ln -s $HOME/dotfiles/config/* ~/.config
 ln -s $HOME/dotfiles/.zshenv ~
 sudo ln -sf $HOME/dotfiles/fonts/* /usr/share/fonts
