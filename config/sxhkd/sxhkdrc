@@ -3,18 +3,18 @@ super + Escape
 
 # terminal
 super + Return
-  alacritty
+  kitty
 
 #CLI Music Player
 super + p 
-   alacritty -e ncmpcpp
+   kitty -e ncmpcpp
 
 # CLI file manager
 super + e
-    alacritty -e lf-ueberzug
+    kitty -e lf-ueberzug
 
 alt + e
-	alacritty -e ranger
+	kitty -e ranger
 
 # Screenshot
 Print

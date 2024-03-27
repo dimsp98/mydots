@@ -3,17 +3,17 @@ super + Escape
 
 # terminal
 super + Return
-   alacritty
+   kitty
 
 # CLI file manager
 super + e
-	alacritty -e lf
+	kitty -e lf
 alt + e	
-	alacritty -e ranger
+	kitty -e ranger
 
 # CLI Music Player
 super + p
-    alacritty -e ncmpcpp
+    kitty -e ncmpcpp
 
 # calculator
 XF86Calculator
