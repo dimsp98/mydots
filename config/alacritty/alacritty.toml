@@ -93,7 +93,7 @@ family = "Iosevka Nerd Font"
 style = "Regular"
 
 [window]
-opacity = 1.0
+opacity = 0.85
 
 [window.padding]
 x = 8
