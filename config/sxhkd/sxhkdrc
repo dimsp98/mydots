@@ -11,7 +11,7 @@ super + p
 
 # CLI file manager
 super + e
-    kitty -e lf-ueberzug
+    kitty -e lf
 
 alt + e
 	kitty -e ranger
