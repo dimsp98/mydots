@@ -4,7 +4,7 @@
     ### Display ###
 
     # Which monitor should the notifications be displayed on.
-    monitor = 0
+    monitor = 
     # Display notification on focused monitor.  Possible modes are:
     #   mouse: follow mouse pointer
     #   keyboard: follow window with keyboard focus
@@ -23,7 +23,7 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = (300,400)
+    width = (0,100)
 
     # The maximum height of a single notification, excluding the frame.
     height = 300
@@ -39,7 +39,7 @@
 
     # Shrink window if it's smaller than the width.  Will be ignored if
     # width is 0.
-    shrink = no
+    shrink = yes
 
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
