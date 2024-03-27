@@ -171,7 +171,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-#polybar
+#layout
+for_window [class=.*] layout toggle split
 
 #borders
 for_window [class="^.*"] border pixel 3
