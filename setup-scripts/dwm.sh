@@ -5,6 +5,9 @@ cd .dwm && sudo make clean install
 cd ~
 git clone https://github.com/dimsp98/slstatus.git ~/slstatus
 cd slstatus && sudo make clean install
+cd ~
+git clone https://github.com/dimsp98/dmenu.git
+cd dmenu && sudo make clean install
 sudo touch /usr/share/xsessions/dwm.desktop
 echo "[Desktop Entry]
 Encoding=UTF-8
