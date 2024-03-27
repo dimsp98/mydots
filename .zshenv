@@ -16,7 +16,7 @@ export OPENER="xdg-open"
 export XDG_CONFIG_HOME="$HOME/.config"
 export ZDOTDIR="$HOME/.config/zsh"
 export PATH="$HOME/.local/bin":$PATH
-#export TERM="kitty-256color"
+export TERM="xterm-kitty"
 
 #pfetch
 export PF_INFO="ascii title kernel os wm uptime pkgs memory"
