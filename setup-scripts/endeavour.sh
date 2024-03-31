@@ -4,11 +4,13 @@
 cd ~ && echo "Installing Dependencies"
 sudo pacman -S neovim
 sudo nvim /etc/pacman.conf
-sudo pacman -S --needed rofi syncthing kitty yt-dlp imagemagick nodejs pnpm base-devel picom git bat papirus-icon-theme lf ffmpeg ghostscript zip unzip gzip curl openssh wget bspwm htop pavucontrol jre-openjdk cmus sxhkd xclip dunst mpv maim libreoffice-fresh firefox-developer-edition sddm qt5-graphicaleffects qt5-quickcontrols2 zsh polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
+sudo pacman -S --needed rofi syncthing kitty yt-dlp imagemagick nodejs pnpm base-devel picom git bat papirus-icon-theme lf ffmpeg ghostscript zip unzip gzip curl openssh wget bspwm htop pavucontrol jre-openjdk cmus sxhkd xclip dunst mpv maim libreoffice-fresh sddm qt5-graphicaleffects qt5-quickcontrols2 zsh polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
 
 #creating directories
 echo "Creating directories"
 create_default_directories() {
+	rm -rf ~/.config/rofi
+	rm -rf ~/.config/i3
 	mkdir -p $HOME/.config && rm -rf $HOME/.config/user-dirs.dirs ln -sf $HOME/dotfiles/config/user-dirs.dirs ~/.config
 	sudo mkdir -p /usr/local/bin
 	sudo mkdir -p /usr/share
