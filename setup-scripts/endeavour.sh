@@ -4,7 +4,7 @@
 cd ~ && echo "Installing Dependencies"
 sudo pacman -S neovim
 sudo nvim /etc/pacman.conf
-sudo pacman -S --needed rofi syncthing kitty yt-dlp imagemagick nodejs pnpm base-devel picom git bat papirus-icon-theme lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance xorg-xsetroot curl openssh wget bspwm htop pavucontrol jre-openjdk cmus sxhkd xclip dunst mpv maim libreoffice-fresh firefox-developer-edition sddm qt5-graphicaleffects qt5-quickcontrols2 zsh polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
+sudo pacman -S --needed rofi syncthing kitty yt-dlp imagemagick nodejs pnpm base-devel picom git bat papirus-icon-theme lf ffmpeg ghostscript zip unzip gzip curl openssh wget bspwm htop pavucontrol jre-openjdk cmus sxhkd xclip dunst mpv maim libreoffice-fresh firefox-developer-edition sddm qt5-graphicaleffects qt5-quickcontrols2 zsh polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
 
 #creating directories
 echo "Creating directories"
