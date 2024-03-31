@@ -177,8 +177,8 @@ for_window [class=.*] layout toggle split
 #borders
 for_window [class="^.*"] border pixel 3
 default_border pixel 3
-#gaps inner 5
-#gaps outer 5
+gaps inner 5
+gaps outer 5
 
 #Workspace Rules
 assign [class="Zoom"] 1
