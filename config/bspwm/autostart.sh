@@ -4,6 +4,9 @@
 #xrandr --output HDMI-2 --primary --mode 1920x1080 --rate 120 --dpi 60 --rotate normal --output eDP-1 --off & 
 xrandr --output eDP-1 --primary --mode 1920x1080 --rate 60 --dpi 60 --rotate normal &
 
+#cursor
+xsetroot -cursor_name left_ptr &
+
 #compositor
 pgrep -x picom > /dev/null || picom -b --config ~/.config/picom/picom.conf &
 
