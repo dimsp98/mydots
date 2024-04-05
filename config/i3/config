@@ -184,7 +184,7 @@ gaps outer 5
 
 #Workspace Rules
 assign [class="Zoom"] 1
-assign [class="Firefox"] 2
+assign [class="firefox"] 2
 assign [class="Nemo"] 3
 assign [class="Zathura"] 4
 assign [class="Soffice"] 5
