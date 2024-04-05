@@ -2,7 +2,7 @@
 
 #Install Dependencies
 cd ~ && echo "Installing Dependencies"
-sudo xbps-install arandr kitty nemo elogind rofi picom yt-dlp syncthing ImageMagick void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree nodejs pnpm xorg xf86-video-nouveau base-devel git bat papirus-icon-theme papirus-folders lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm htop pulseaudio pamixer pavucontrol alsa-plugins-pulseaudio openjdk-jre mpd ncmpcpp sxhkd xclip dunst mpv maim libreoffice pfetch firefox sddm qt5-graphicaleffects qt5-quickcontrols2 zsh neovim polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
+sudo xbps-install arandr bluez kitty nemo elogind rofi picom yt-dlp syncthing ImageMagick void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree nodejs pnpm xorg xf86-video-nouveau base-devel git bat papirus-icon-theme papirus-folders lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm htop pulseaudio pamixer pavucontrol alsa-plugins-pulseaudio openjdk-jre mpd ncmpcpp sxhkd xclip dunst mpv maim libreoffice pfetch firefox sddm qt5-graphicaleffects qt5-quickcontrols2 zsh neovim polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
 
 #creating directories
 echo "Creating directories"
@@ -57,3 +57,4 @@ echo -e "Setting up servicces"
 sudo ln -s /etc/sv/cupsd /var/service
 sudo ln -s /etc/sv/dbus /var/service
 sudo ln -s /etc/sv/sddm /var/service
+sudo ln -s /etc/sv/bluetoothd /var/service
