@@ -4,7 +4,8 @@
 cd ~ && echo "Installing Dependencies"
 sudo pacman -S neovim
 sudo nvim /etc/pacman.conf
-sudo pacman -S --needed arandr rofi syncthing kitty yt-dlp imagemagick nodejs pnpm xorg xf86-video-nouveau base-devel picom git bat papirus-icon-theme lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance xorg-xsetroot curl openssh wget bspwm htop pulseaudio pamixer pavucontrol pulseaudio-alsa jre-openjdk cmus sxhkd xclip dunst mpv maim libreoffice-fresh firefox-developer-edition sddm qt5-graphicaleffects qt5-quickcontrols2 zsh polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
+sudo pacman -S --needed arandr rustup pnpm bluez blueberry rofi syncthing kitty yt-dlp imagemagick nodejs pnpm xorg xf86-video-nouveau base-devel picom git bat papirus-icon-theme lf ueberzug ffmpeg ghostscript zip unzip gzip lxappearance xorg-xsetroot curl openssh wget bspwm htop pulseaudio pamixer pavucontrol pulseaudio-alsa jre-openjdk cmus sxhkd xclip dunst mpv maim libreoffice-fresh firefox-developer-edition sddm qt5-graphicaleffects qt5-quickcontrols2 zsh polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
+rustup toolchain install nightly
 
 #creating directories
 echo "Creating directories"
@@ -47,6 +48,7 @@ paru -S zoom zotero-bin nvm pfetch-rs-bin
 chsh -s /usr/bin/zsh && sudo chsh -s /usr/bin/zsh
 
 #NVim
+paru -S --needed git lazygit zoxide ripgrep fd yarn ttf-jetbrains-mono-nerd lldb nvm make unzip neovim python-pynvim
 sudo pacman -S --needed tree-sitter lazygit ripgrep sqlite fd yarn lldb && cd ~
 if command -v curl >/dev/null 2>&1; then
 	bash -c "$(curl -fsSL https://raw.githubusercontent.com/ayamir/nvimdots/HEAD/scripts/install.sh)"
