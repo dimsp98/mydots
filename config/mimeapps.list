@@ -18,6 +18,7 @@ text/html=firefox.desktop;
 text/xml=nvim.desktop;
 application/json=nvim.desktop
 application/pdf=org.pwmt.zathura.desktop;
+x-scheme-handler/viber=viber.desktop
 
 [Added Associations]
 x-scheme-handler/http=userapp-Firefox-H34901.desktop;
