@@ -39,11 +39,7 @@ chsh -s /usr/bin/zsh && sudo chsh -s /usr/bin/zsh
 #NVim
 yay -S --needed git lazygit zoxide ripgrep fd yarn ttf-jetbrains-mono-nerd lldb nvm make unzip neovim python-pynvim
 sudo pacman -S --needed tree-sitter lazygit ripgrep sqlite fd yarn lldb && cd ~
-if command -v curl >/dev/null 2>&1; then
-	bash -c "$(curl -fsSL https://raw.githubusercontent.com/ayamir/nvimdots/HEAD/scripts/install.sh)"
-else
-	bash -c "$(wget -O- https://raw.githubusercontent.com/ayamir/nvimdots/HEAD/scripts/install.sh)"
-fi
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 
 #SDDM THEME
 cd ~

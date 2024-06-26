@@ -40,7 +40,8 @@ chsh -s /usr/bin/zsh && sudo chsh -s /usr/bin/zsh
 
 #NVim
 rustup toolchain install nightly
-sudo xbps-install tree-sitter zoxide lazygit ripgrep sqlite fd yarn lldb nvm && cd ~
+sudo xbps-install tree-sitter zoxide lazygit ripgrep sqlite fd yarn lldb nvm gcc && cd ~
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 
 #Configure fonts
 sudo ln -s /usr/share/fontconfig/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d/
