@@ -3,7 +3,6 @@
 export BAT_THEME="Catppuccin-mocha"
 
 # Default Apps
-export HARDWARECLOCK="localtime"
 export EDITOR="nvim"
 export READER="zathura"
 export VISUAL="nvim"

@@ -51,6 +51,9 @@ git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 sudo ln -s /usr/share/fontconfig/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d/
 sudo xbps-reconfigure -f fontconfig
 
+#Dual-boot Timezone
+echo "HARDWARECLOCK="localtime"" | sudo tee /etc/rc.conf
+
 #Setting up services
 echo -e "Setting up servicces"
 sudo ln -s /etc/sv/cupsd /var/service
