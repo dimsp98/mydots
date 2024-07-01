@@ -21,7 +21,7 @@ cd ~/dotfiles && echo "Creating symlinks"
 git submodule update --init
 ln -s $HOME/dotfiles/config/* ~/.config
 ln -s $HOME/dotfiles/.zshenv ~
-sudo rm -rf /usr/share/fonts && sudo ln -sf $HOME/dotfiles/fonts/* /usr/share/fonts
+sudo cp -r $HOME/dotfiles/fonts/* /usr/share/fonts
 sudo ln -sf $HOME/dotfiles/icons/* /usr/share/icons
 sudo ln -sf $HOME/dotfiles/themes/* /usr/share/themes
 
