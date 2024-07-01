@@ -6,7 +6,8 @@ sudo xbps-install arandr bluez qt6-qt5compat rustup pnpm kitty nemo elogind rofi
 
 #creating directories
 echo "Creating directories"
-mkdir -p $HOME/.config && rm -rf $HOME/.config/user-dirs.dirs ln -sf $HOME/dotfiles/config/user-dirs.dirs ~/.config
+mkdir -p $HOME/.config && rm -rf $HOME/.config/user-dirs.dirs 
+ln -sf $HOME/dotfiles/config/user-dirs.dirs ~/.config
 sudo mkdir -p /usr/local/bin
 sudo mkdir -p /usr/share
 mkdir -p $HOME/Pictures
@@ -19,8 +20,8 @@ papirus-folders -C cyan --theme Papirus-Dark
 #Install and apply my dotfiles
 cd ~/dotfiles && echo "Creating symlinks"
 git submodule update --init
-ln -s $HOME/dotfiles/config/* ~/.config
-ln -s $HOME/dotfiles/.zshenv ~
+ln -sf $HOME/dotfiles/config/* ~/.config
+ln -sf $HOME/dotfiles/.zshenv ~
 sudo cp -r $HOME/dotfiles/fonts/* /usr/share/fonts
 sudo ln -sf $HOME/dotfiles/icons/* /usr/share/icons
 sudo ln -sf $HOME/dotfiles/themes/* /usr/share/themes
