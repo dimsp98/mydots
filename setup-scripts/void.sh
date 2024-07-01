@@ -6,8 +6,7 @@ sudo xbps-install arandr bluez qt6-qt5compat rustup pnpm kitty nemo elogind rofi
 
 #creating directories
 echo "Creating directories"
-mkdir -p $HOME/.config && rm -rf $HOME/.config/user-dirs.dirs 
-ln -sf $HOME/dotfiles/config/user-dirs.dirs ~/.config
+mkdir -p $HOME/.config
 sudo mkdir -p /usr/local/bin
 sudo mkdir -p /usr/share
 mkdir -p $HOME/Pictures
