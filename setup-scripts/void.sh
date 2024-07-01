@@ -52,11 +52,3 @@ echo -e "Setting up servicces"
 sudo ln -s /etc/sv/cupsd /var/service
 sudo ln -s /etc/sv/dbus /var/service
 sudo ln -s /etc/sv/bluetoothd /var/service
-
-#SDDM THEME
-cd ~
-sudo git clone https://github.com/keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme
-sudo cp /usr/share/sddm/themes/sddm-astronaut-theme/Fonts/* /usr/share/fonts/
-echo "[Theme]
-Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf
-sudo ln -sf /etc/sv/sddm /var/service
