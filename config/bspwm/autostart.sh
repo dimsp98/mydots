@@ -26,7 +26,7 @@ setxkbmap -model pc104 -layout us,gr -option 'grp:alt_shift_toggle' &
 pgrep -x dunst >/dev/null || dunst -c ~/.config/dunst/dunstrc &
 
 #audio
-pipewire &
+dbus-run-session pipewire &
 
 #polybar
 polybar -c ~/.config/polybar/config.ini 
