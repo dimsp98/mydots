@@ -29,4 +29,4 @@ pgrep -x dunst >/dev/null || dunst -c ~/.config/dunst/dunstrc &
 dbus-run-session pipewire &
 
 #polybar
-polybar -c ~/.config/polybar/config.ini 
+~/.config/bspwm/bar.sh
