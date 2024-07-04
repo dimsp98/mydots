@@ -11,7 +11,7 @@ xsetroot -cursor_name left_ptr &
 pgrep -x picom >/dev/null || picom -b --config ~/.config/picom/picom.conf &
 
 #wallpaper
-feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/wallhaven-7pj8jo_2560x1440.png &
+feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/wallpaperbetter.com_1920x1080.jpg &
 
 #removable media
 pgrep -x udiskie >/dev/null || udiskie &
