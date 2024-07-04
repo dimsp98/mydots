@@ -11,6 +11,10 @@ super + e
 alt + e	
 	kitty -e ranger
 
+#GUI file manager
+ctrl + alt + f 
+  nemo
+
 # CLI Music Player
 super + p
     kitty -e ncmpcpp

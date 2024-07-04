@@ -16,6 +16,10 @@ super + e
 alt + e
 	kitty -e ranger
 
+#GUI file manager
+ctrl +alt + f
+  nemo
+
 # Screenshot
 Print
  ~/.config/rofi/applets/bin/screenshot.sh
