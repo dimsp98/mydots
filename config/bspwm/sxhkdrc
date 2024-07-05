@@ -13,7 +13,7 @@ alt + e
 
 #GUI file manager
 ctrl + alt + f 
-  nemo
+  thunar
 
 # CLI Music Player
 super + p
