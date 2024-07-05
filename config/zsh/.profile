@@ -1,9 +1,6 @@
 #aliases
 alias poweroff='loginctl poweroff'
 alias reboot='loginctl reboot'
-alias it='sudo apt install'
-alias ar='sudo apt remove'
-alias up='sudo apt upgrade'
 alias pull='git pull'
 alias ga='git add'
 alias gp='git push'
