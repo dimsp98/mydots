@@ -24,4 +24,4 @@ set scroll-step 200
 set selection-clipboard clipboard
 
 #theme
-include catpuccin
+include catpuccin-mocha
