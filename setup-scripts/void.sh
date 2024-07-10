@@ -31,10 +31,15 @@ sudo ln -sf $HOME/dotfiles/themes/* /usr/share/themes
 
 #void-packages
 echo -e "Installing void-packages"
-cd ~ && git clone https://github.com/dimsp98/void-packages.git
+cd ~ && git clone https://github.com/void-linux/void-packages.git
 cd void-packages
 ./xbps-src binary-bootstrap
 echo XBPS_ALLOW_RESTRICTED=yes >>etc/conf
+
+#Flatpak
+sudo xbps-install flatpak 
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install brave zotero
 
 #Change theme for bat
 bat cache --build
