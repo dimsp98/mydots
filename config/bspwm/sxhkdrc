@@ -60,7 +60,7 @@ super + b
   brave-browser-stable
 
 alt + b 
-firefox
+  firefox
 
 ## BSPWM HOTKEYS ##
 # quit/restart bspwm
