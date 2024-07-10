@@ -31,7 +31,7 @@ sudo ln -sf $HOME/dotfiles/themes/* /usr/share/themes
 
 #void-packages
 echo -e "Installing void-packages"
-cd ~ && git clone https://github.com/void-linux/void-packages.git
+cd ~ && git clone https://github.com/dimsp98/void-packages.git
 cd void-packages
 ./xbps-src binary-bootstrap
 echo XBPS_ALLOW_RESTRICTED=yes >>etc/conf
