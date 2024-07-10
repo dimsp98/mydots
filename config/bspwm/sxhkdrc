@@ -57,7 +57,7 @@ XF86MonBrightnessDown
   
 # Browser
 super + b
-  brave-browser
+  firefox
 
 ## BSPWM HOTKEYS ##
 # quit/restart bspwm
