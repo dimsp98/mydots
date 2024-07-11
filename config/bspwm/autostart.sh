@@ -13,9 +13,6 @@ pgrep -x picom >/dev/null || picom -b --config ~/.config/picom/picom.conf &
 #wallpaper
 feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/wallpaperbetter.com_1920x1080.jpg &
 
-#removable media
-pgrep -x udiskie >/dev/null || udiskie &
-
 #clipboard
 xclip &
 
@@ -26,7 +23,7 @@ setxkbmap -model pc104 -layout us,gr -option 'grp:alt_shift_toggle' &
 pgrep -x dunst >/dev/null || dunst -c ~/.config/dunst/dunstrc &
 
 #audio
-exec dbus-run-session pipewire &
+pipewire &
 
 #polybar
 ~/.config/bspwm/bar.sh
