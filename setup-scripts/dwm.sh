@@ -13,6 +13,6 @@ echo "[Desktop Entry]
 Encoding=UTF-8
 Name=Dwm
 Comment=Dynamic window manager
-Exec=dwm
+Exec=dbus-run-session dwm
 Icon=dwm
 Type=XSession" | sudo tee -a /usr/share/xsessions/dwm.desktop
