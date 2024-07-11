@@ -18,7 +18,7 @@ alt + e
 
 #GUI file manager
 ctrl +alt + f
-  nemo
+  thunar
 
 # Screenshot
 Print
@@ -54,4 +54,7 @@ XF86MonBrightnessDown
 
 # Browser
 super + b
+  brave-browser-stable
+
+alt + b 
   firefox
