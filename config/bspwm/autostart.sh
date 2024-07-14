@@ -7,6 +7,9 @@ xrandr --output eDP-1 --primary --mode 1920x1080 --rate 60 --dpi 60 --rotate nor
 #cursor
 xsetroot -cursor_name left_ptr &
 
+#Xorg power management
+xset s off -dpms &
+
 #compositor
 pgrep -x picom >/dev/null || picom -b --config ~/.config/picom/picom.conf &
 
