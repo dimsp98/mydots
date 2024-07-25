@@ -34,7 +34,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id setxkbmap -model pc104 -layout us,gr -option 'grp:alt_shift_toggle'
 
 #autostart
-exec_always --no-startup-id feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/wallhaven-7pj8jo_2560x1440.png
 exec_always --no-startup-id xclip
 exec_always --no-startup-id xsetroot -cursor_name left_ptr
 exec_always --no-startup-id xrandr --output HDMI-2 --primary --mode 1920x1080 --rate 120 --dpi 60 --rotate normal --output eDP-1 --off  
@@ -42,7 +41,7 @@ exec_always --no-startup-id xrandr --output HDMI-2 --primary --mode 1920x1080 --
 exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
 exec_always --no-startup-id dunst -c ~/.config/dunsr/dunstrc
 exec_always --no-startup-id sxhkd -c ~/.config/sxhkd/sxhkdrc
-exec_always --no-startup-id feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/wallhaven-7pj8jo_2560x1440.png
+exec_always --no-startup-id feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/wallpaperbetter.com_1920x1080.jpg
 exec_always --no-startup-id ~/.config/i3/panel.sh
 
 # Use Mouse+$mod to drag floating windows to their wanted position
