@@ -14,7 +14,7 @@ xset s off -dpms &
 pgrep -x picom >/dev/null || picom -b --config ~/.config/picom/picom.conf &
 
 #wallpaper
-feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/FordMustang.jpg &
+feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/void-1920x1080.png &
 
 #clipboard
 xclip &
