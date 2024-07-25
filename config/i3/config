@@ -42,7 +42,7 @@ exec_always --no-startup-id xrandr --output HDMI-2 --primary --mode 1920x1080 --
 exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
 exec_always --no-startup-id dunst -c ~/.config/dunsr/dunstrc
 exec_always --no-startup-id sxhkd -c ~/.config/sxhkd/sxhkdrc
-exec_always --no-startup-id feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/wallpaperbetter.com_1920x1080.jpg
+exec_always --no-startup-id feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/void-black-4k.png
 exec_always --no-startup-id ~/.config/i3/panel.sh
 
 # Use Mouse+$mod to drag floating windows to their wanted position
