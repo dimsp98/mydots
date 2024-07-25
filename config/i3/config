@@ -35,6 +35,7 @@ exec --no-startup-id setxkbmap -model pc104 -layout us,gr -option 'grp:alt_shift
 
 #autostart
 exec_always --no-startup-id xclip
+exec_always --no-startup-id pipewire
 exec_always --no-startup-id xsetroot -cursor_name left_ptr
 exec_always --no-startup-id xrandr --output HDMI-2 --primary --mode 1920x1080 --rate 120 --dpi 60 --rotate normal --output eDP-1 --off  
 #exec_always --no-startup-id xrandr --output eDP-1 --primary --mode 1920x1080 --rate 60 --dpi 60 --rotate normal 
