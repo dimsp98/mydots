@@ -15,7 +15,7 @@ xrandr --output eDP-1 --primary --mode 1920x1080 --rate 60 --dpi 60 --rotate nor
 xset s off &
 xset -dpms &
 pgrep -x picom >/dev/null || picom --config ~/.config/picom/picom.conf &
-feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/wallhaven-7pj8jo_2560x1440.png &
+feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/wallpaperbetter.com_1920x1080.jpg &
 xclip &
 setxkbmap -model pc104 -layout us,gr -option 'grp:alt_shift_toggle' &
 pgrep -x dunst >/dev/null || dunst -c ~/.config/dunst/dunstrc &
