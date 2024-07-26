@@ -13,10 +13,10 @@ local theme = {}
 theme.font = "Iosevka Nerd Font 15"
 
 theme.useless_gap = 5
-theme.border_width = 1
+theme.border_width = 2
 
 theme.black = "#1e1e2e"
-theme.deep_black = "#1b1923"
+theme.deep_black = "#11111b"
 theme.white = "#d7dae0"
 theme.light_white = "#fafafa"
 theme.pink = "#f0afe1"
