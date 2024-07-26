@@ -28,11 +28,11 @@ theme.blue = "#74c7ec"
 theme.purple = "#cba6f7"
 theme.grey = "#9399b2"
 
-theme.bg_normal = theme.black
-theme.bg_focus = theme.deep_black
-theme.bg_urgent = theme.white
+theme.bg_normal = theme.deep_black
+theme.bg_focus = theme.black
+theme.bg_urgent = theme.deep_black
 theme.bg_minimize = theme.grey
-theme.bg_systray = theme.black
+theme.bg_systray = theme.deep_black
 
 theme.fg_normal = theme.white
 theme.fg_focus = theme.blue
@@ -58,7 +58,7 @@ theme.border_marked = theme.purple
 
 -- Generate taglist squares:
 local taglist_square_size = dpi(5)
-theme.taglist_squares_sel = theme_assets.taglist_squares_sel(taglist_square_size, theme.fg_normal)
+theme.taglist_squares_sel = theme_assets.taglist_squares_sel(taglist_square_size, theme.fg_focus)
 theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(taglist_square_size, theme.fg_normal)
 theme.taglist_disable_icon = false
 
@@ -77,8 +77,8 @@ theme.notification_icon_size = dpi(60)
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
 theme.menu_submenu_icon = themes_path .. "default/submenu.png"
-theme.menu_height = dpi(10)
-theme.menu_width = dpi(60)
+theme.menu_height = dpi(20)
+theme.menu_width = dpi(150)
 
 -- You can add as many variables as
 -- you wish and access them by using
