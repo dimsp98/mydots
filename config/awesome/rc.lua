@@ -141,7 +141,8 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 
 --battery widget
 local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
-
+--volume widget
+local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
 -- {{{ Wibar
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
@@ -249,6 +250,7 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
+            volume_widget(),
 		        battery_widget(),
             mytextclock,
             s.mylayoutbox,
