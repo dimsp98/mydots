@@ -12,8 +12,8 @@ local theme = {}
 
 theme.font = "Iosevka Nerd Font 11"
 
-theme.useless_gap = 3
-theme.border_width = 2
+theme.useless_gap = dpi(3)
+theme.border_width = dpi(2)
 
 theme.black = "#1e1e2e"
 theme.deep_black = "#11111b"
@@ -39,8 +39,8 @@ theme.fg_focus = theme.blue
 theme.fg_urgent = theme.red
 theme.fg_minimize = theme.light_white
 
-theme.border_normal = theme.blue
-theme.border_focus = theme.green
+theme.border_normal = theme.white
+theme.border_focus = theme.blue
 theme.border_marked = theme.purple
 
 -- There are other variable sets
@@ -60,7 +60,7 @@ theme.border_marked = theme.purple
 local taglist_square_size = dpi(5)
 theme.taglist_squares_sel = theme_assets.taglist_squares_sel(taglist_square_size, theme.fg_normal)
 theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(taglist_square_size, theme.fg_normal)
-theme.taglist_disable_icon = true
+theme.taglist_disable_icon = false
 
 -- Variables set for theming notifications:
 theme.notification_font = "Iosevka Nerd Font 12"
