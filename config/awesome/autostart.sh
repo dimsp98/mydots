@@ -1,8 +1,8 @@
 #!/bin/sh
 
 #Xorg management
-#xrandr --output HDMI-2 --primary --mode 1920x1080 --rate 120 --dpi 60 --rotate normal --output eDP-1 --off &
-#xrandr --output eDP-1 --primary --mode 1920x1080 --rate 60 --dpi 60 --rotate normal &
+#xrandr --output HDMI-1 --primary --mode 1920x1080 --rate 120 --dpi 60 --rotate normal --output eDP-1 --off &
+xrandr --output eDP-1 --primary --mode 1920x1080 --rate 60 --dpi 60 --rotate normal &
 
 #Xorg power management
 xset s off -dpms &
@@ -11,10 +11,10 @@ xset s off -dpms &
 pgrep -x sxhkd >/dev/null || sxhkd -c $HOME/.config/sxhkd/sxhkdrc &
 
 #compositor
-pgrep -x picom >/dev/null || picom -b --config ~/.config/picom/picom.conf &
+pgrep -x picom >/dev/null || picom -b --config ~/.config/awesome/picom.conf &
 
 #wallpaper
-feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/wallpaperbetter.jpg &
+feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/various-os-1-4k.png &
 
 #clipboard
 xclip &

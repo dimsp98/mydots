@@ -1,8 +1,8 @@
 -- If LuaRocks is installed, make sure that packages installed through it are
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
-
 local theme_dir = os.getenv("HOME") .. "/.config/awesome/themes/default/"
+
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
@@ -46,7 +46,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+beautiful.init(theme_dir .. "theme.lua")
 beautiful.font="Iosevka Nerd Font 11"
 
 -- This is used later as the default terminal and editor to run.

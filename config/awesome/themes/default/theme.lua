@@ -10,9 +10,9 @@ local themes_path = os.getenv("HOME") .. "/.config/awesome/themes/"
 
 local theme = {}
 
-theme.font = "Iosevka Nerd Font 15"
+theme.font = "Iosevka Nerd Font 11"
 
-theme.useless_gap = 5
+theme.useless_gap = 3
 theme.border_width = 2
 
 theme.black = "#1e1e2e"
