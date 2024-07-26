@@ -47,7 +47,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
-beautiful.font="Iosevka Nerd Font 12"
+beautiful.font="Iosevka Nerd Font 11"
 
 -- This is used later as the default terminal and editor to run.
 terminal = "kitty"
@@ -102,6 +102,12 @@ local termmenu = {
 	{ "kitty", "kitty" },
 }
 
+local multimediamenu = {
+	{ "ncmpcpp", "kitty --class music -e ncmpcpp" },
+	{ "vlc", "vlc" },
+	{ "pulseaudio", "pavucontrol" },
+}
+
 local myexitmenu = {
 	{
 		"logout",
@@ -116,8 +122,9 @@ local myexitmenu = {
 local mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
                                     { "terms", termmenu },
 	                                	{ "network", networkmenu },
+                                    {"multimedia", multimediamenu},
                                     { "exit options", myexitmenu },
-                                  }
+              },
                         })
 
 mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
@@ -194,11 +201,10 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    --awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }, s, awful.layout.layouts[1])
-    awful.tag({ "", "", "", "", "", "", "", "", "", "", "󰝚" }, s, awful.layout.layouts[1])
+    awful.tag({ " ", " ", " ", " ", " ", " ", " ", " ", " ", "󰝚 " }, s, awful.layout.layouts[1]) 
 
 
-    -- Create a promptbox for each screen
+  -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
     -- Create an imagebox widget which will contain an icon indicating which layout we're using.
     -- We need one layoutbox per screen.
@@ -303,9 +309,9 @@ globalkeys = gears.table.join(
     -- Standard program
     awful.key({ Modkey,           }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
-    awful.key({ Modkey, "Control" }, "r", awesome.restart,
+    awful.key({ Modkey, "Shift" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
-    awful.key({ Modkey, "Shift"   }, "q", awesome.quit,
+    awful.key({ Modkey, "Shift"   }, "e", awesome.quit,
               {description = "quit awesome", group = "awesome"}),
 
     awful.key({ Modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
@@ -521,8 +527,6 @@ awful.rules.rules = {
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
-    -- { rule = { class = "Firefox" },
-    --   properties = { screen = 1, tag = "2" } },
 }
 -- }}}
 
@@ -541,53 +545,5 @@ client.connect_signal("manage", function (c)
     end
 end)
 
--- Add a titlebar if titlebars_enabled is set to true in the rules.
-client.connect_signal("request::titlebars", function(c)
-    -- buttons for the titlebar
-    local buttons = gears.table.join(
-        awful.button({ }, 1, function()
-            c:emit_signal("request::activate", "titlebar", {raise = true})
-            awful.mouse.client.move(c)
-        end),
-        awful.button({ }, 3, function()
-            c:emit_signal("request::activate", "titlebar", {raise = true})
-            awful.mouse.client.resize(c)
-        end)
-    )
-
-    awful.titlebar(c) : setup {
-        { -- Left
-            awful.titlebar.widget.iconwidget(c),
-            buttons = buttons,
-            layout  = wibox.layout.fixed.horizontal
-        },
-        { -- Middle
-            { -- Title
-                align  = "center",
-                widget = awful.titlebar.widget.titlewidget(c)
-            },
-            buttons = buttons,
-            layout  = wibox.layout.flex.horizontal
-        },
-        { -- Right
-            awful.titlebar.widget.floatingbutton (c),
-            awful.titlebar.widget.maximizedbutton(c),
-            awful.titlebar.widget.stickybutton   (c),
-            awful.titlebar.widget.ontopbutton    (c),
-            awful.titlebar.widget.closebutton    (c),
-            layout = wibox.layout.fixed.horizontal()
-        },
-        layout = wibox.layout.align.horizontal
-    }
-end)
-
--- Enable sloppy focus, so that focus follows mouse.
-client.connect_signal("mouse::enter", function(c)
-    c:emit_signal("request::activate", "mouse_enter", {raise = false})
-end)
-
-client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
-client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
--- }}}
 -- Autostart
 awful.spawn.with_shell("~/.config/awesome/autostart.sh")
