@@ -139,6 +139,9 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- Keyboard map indicator and switcher
 mykeyboardlayout = awful.widget.keyboardlayout()
 
+--battery widget
+local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
+
 -- {{{ Wibar
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
@@ -246,6 +249,7 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
+		        battery_widget(),
             mytextclock,
             s.mylayoutbox,
         },
