@@ -35,7 +35,7 @@ theme.bg_minimize = theme.grey
 theme.bg_systray = theme.black
 
 theme.fg_normal = theme.white
-theme.fg_focus = theme.orange
+theme.fg_focus = theme.blue
 theme.fg_urgent = theme.red
 theme.fg_minimize = theme.light_white
 
@@ -57,10 +57,10 @@ theme.border_marked = theme.purple
 --theme.taglist_bg_focus = "#ff0000"
 
 -- Generate taglist squares:
-local taglist_square_size = dpi(10)
+local taglist_square_size = dpi(5)
 theme.taglist_squares_sel = theme_assets.taglist_squares_sel(taglist_square_size, theme.fg_normal)
 theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(taglist_square_size, theme.fg_normal)
-theme.taglist_disable_icon = false
+theme.taglist_disable_icon = true
 
 -- Variables set for theming notifications:
 theme.notification_font = "Iosevka Nerd Font 12"
@@ -77,8 +77,8 @@ theme.notification_icon_size = dpi(60)
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
 theme.menu_submenu_icon = themes_path .. "default/submenu.png"
-theme.menu_height = dpi(25)
-theme.menu_width = dpi(100)
+theme.menu_height = dpi(10)
+theme.menu_width = dpi(60)
 
 -- You can add as many variables as
 -- you wish and access them by using
