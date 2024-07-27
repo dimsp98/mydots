@@ -143,6 +143,8 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
 --volume widget
 local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
+local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout-menu")
+
 -- {{{ Wibar
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
@@ -253,6 +255,7 @@ awful.screen.connect_for_each_screen(function(s)
             volume_widget(),
 		        battery_widget(),
             mytextclock,
+            logout_menu_widget(),
             s.mylayoutbox,
         },
     }
@@ -534,7 +537,7 @@ awful.rules.rules = {
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
-      { rule = { class = "Brave-browser-stable" },
+      { rule = { class = "Brave-browser" },
       properties = { screen = 1, tag = "2" }
       },
       { rule = { class = "Firefox" },

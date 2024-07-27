@@ -29,5 +29,5 @@ pgrep -x dunst >/dev/null || dunst -c ~/.config/dunst/dunstrc &
 nm-applet &
 
 #audio
-volumeicon &
-pipewire &
+pgrep -x volumeicon >/dev/null || volumeicon &
+pgrep -x pipewire >/dev/null || pipewire &
