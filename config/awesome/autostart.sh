@@ -14,7 +14,7 @@ pgrep -x sxhkd >/dev/null || sxhkd -c $HOME/.config/sxhkd/sxhkdrc &
 pgrep -x picom >/dev/null || picom -b --config ~/.config/awesome/picom.conf &
 
 #wallpaper
-feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/various-os-1-4k.png &
+feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/wallpaperbetter.jpg &
 
 #clipboard
 xclip &
