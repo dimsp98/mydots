@@ -28,11 +28,11 @@ theme.blue = "#74c7ec"
 theme.purple = "#cba6f7"
 theme.grey = "#9399b2"
 
-theme.bg_normal = theme.deep_black
+theme.bg_normal = theme.black
 theme.bg_focus = theme.black
-theme.bg_urgent = theme.deep_black
+theme.bg_urgent = theme.black
 theme.bg_minimize = theme.grey
-theme.bg_systray = theme.deep_black
+theme.bg_systray = theme.black
 
 theme.fg_normal = theme.white
 theme.fg_focus = theme.blue
