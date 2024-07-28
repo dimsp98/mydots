@@ -107,7 +107,7 @@ local termmenu = {
 local multimediamenu = {
 	{ "ncmpcpp", "kitty --class music -e ncmpcpp" },
 	{ "vlc", "vlc" },
-	{ "pulseaudio", "pavucontrol" },
+	{ "pavucontrol", "pavucontrol" },
 }
 
 local myexitmenu = {
@@ -139,6 +139,7 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- Keyboard map indicator and switcher
 mykeyboardlayout = awful.widget.keyboardlayout()
 
+local volume_widget = require('awesome-wm-widgets.pactl-widget.volume')
 local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
 local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout-menu")
 
@@ -250,6 +251,9 @@ awful.screen.connect_for_each_screen(function(s)
             mykeyboardlayout,
             wibox.widget.systray(),
             battery_widget(),
+            volume_widget{
+              widget_type = 'icon'
+      },
             mytextclock,
             logout_menu_widget(),
             s.mylayoutbox,
