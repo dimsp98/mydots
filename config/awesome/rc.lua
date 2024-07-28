@@ -139,10 +139,7 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- Keyboard map indicator and switcher
 mykeyboardlayout = awful.widget.keyboardlayout()
 
---battery widget
 local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
---volume widget
-local volume_widget = require("awesome-wm-widgets.volume-widget.volume")
 local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout-menu")
 
 -- {{{ Wibar
@@ -252,7 +249,6 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
-            volume_widget(),
             battery_widget(),
             mytextclock,
             logout_menu_widget(),
