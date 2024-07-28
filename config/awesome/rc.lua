@@ -55,7 +55,7 @@ beautiful.font="Iosevka Nerd Font 11"
 terminal = "kitty"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
-
+local filemanager = "thunar"
 -- Default Modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
 -- If you do not like this or do not have such a key,
@@ -368,8 +368,36 @@ globalkeys = gears.table.join(
               end,
               {description = "lua execute prompt", group = "awesome"}),
     -- Menubar
-    awful.key({ Modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+    awful.key({ Modkey, "Shift" }, "p", function() menubar.show() end,
+              {description = "show the menubar", group = "launcher"}),
+    awful.key({ Altkey }, "space", function() awful.util.spawn("~/.config/rofi/launchers/type-1/launcher.sh") end,
+              {description = "rofi launcher", group = "launcher"}),
+    awful.key({ Altkey }, "p", function() awful.util.spawn("~/.config/rofi/powermenu/type-1/powermenu.sh") end,
+              {description = "powermenu", group = "launcher"}),
+    awful.key({ Modkey }, "b", function() awful.util.spawn("brave-browser-stable") end,
+              {description = "launch brave", group = "client"}),
+    awful.key({  }, "Print", function() awful.util.spawn("~/.config/rofi/applets/bin/screenshot.sh") end,
+              {description = "rofi screenshot", group = "client"}),
+    awful.key({ Modkey }, "d", function() awful.util.spawn("dmenu_run -c -F") end,
+              {description = "dmenu", group = "launcher"}),
+    awful.key({ Modkey }, "p", function() awful.util.spawn("kitty -e ncmpcpp") end,
+              {description = "ncmpcpp", group = "client"}),
+    awful.key({ Modkey }, "e", function() awful.util.spawn("kitty -e lf") end,
+              {description = "lf", group = "client"}),
+    awful.key({ Altkey }, "e", function() awful.util.spawn("kitty -e ranger") end,
+              {description = "ranger", group = "client"}),
+    awful.key({ "Control", Altkey }, "f", function() awful.util.spawn("thunar") end,
+              {description = "thunar", group = "client"}),
+    awful.key({  }, "XF86AudioRaiseVolume", function() awful.util.spawn("pactl set-sink-volume 0 +5%") end,
+              {description = "raise volume", group = "media"}),
+  awful.key({  }, "XF86AudioLowerVolume", function() awful.util.spawn("pactl set-sink-volume 0 -5%") end,
+              {description = "lower volume", group = "media"}),
+  awful.key({  }, "XF86AudioMute", function() awful.util.spawn("pactl set-sink-mute 0 toggle") end,
+              {description = "mute", group = "media"}),
+  awful.key({  }, "XF86MonBrightnessUp", function() awful.util.spawn("brightnessctl set +10%") end,
+              {description = "brightness up", group = "media"}),
+  awful.key({ "Control", Altkey }, "XF86MonBrightnessDown", function() awful.util.spawn("brightnessctl set -10%") end,
+              {description = "brightness down", group = "client"})
 )
 
 clientkeys = gears.table.join(
