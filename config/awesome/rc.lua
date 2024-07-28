@@ -318,7 +318,7 @@ globalkeys = gears.table.join(
 
     -- Standard program
     awful.key({ Modkey,           }, "Return", function () awful.spawn(terminal) end,
-              {description = "open a terminal", group = "launcher"}),
+              {description = "open a terminal", group = "terminal"}),
     awful.key({ Modkey, "Shift" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
     awful.key({ Modkey, "Shift"   }, "e", awesome.quit,
@@ -373,21 +373,21 @@ globalkeys = gears.table.join(
     awful.key({ Altkey }, "space", function() awful.util.spawn("~/.config/rofi/launchers/type-1/launcher.sh") end,
               {description = "rofi launcher", group = "launcher"}),
     awful.key({ Altkey }, "p", function() awful.util.spawn("~/.config/rofi/powermenu/type-1/powermenu.sh") end,
-              {description = "powermenu", group = "launcher"}),
+              {description = "powermenu", group = "powermenu"}),
     awful.key({ Modkey }, "b", function() awful.util.spawn("brave-browser-stable") end,
-              {description = "launch brave", group = "client"}),
+              {description = "launch brave", group = "browser"}),
     awful.key({  }, "Print", function() awful.util.spawn("~/.config/rofi/applets/bin/screenshot.sh") end,
-              {description = "rofi screenshot", group = "client"}),
+              {description = "rofi screenshot", group = "screenshot"}),
     awful.key({ Modkey }, "d", function() awful.util.spawn("dmenu_run -c -F") end,
               {description = "dmenu", group = "launcher"}),
     awful.key({ Modkey }, "p", function() awful.util.spawn("kitty -e ncmpcpp") end,
-              {description = "ncmpcpp", group = "client"}),
+              {description = "ncmpcpp", group = "music player"}),
     awful.key({ Modkey }, "e", function() awful.util.spawn("kitty -e lf") end,
-              {description = "lf", group = "client"}),
+              {description = "lf", group = "file manager"}),
     awful.key({ Altkey }, "e", function() awful.util.spawn("kitty -e ranger") end,
-              {description = "ranger", group = "client"}),
+              {description = "ranger", group = "file manager"}),
     awful.key({ "Control", Altkey }, "f", function() awful.util.spawn("thunar") end,
-              {description = "thunar", group = "client"}),
+              {description = "thunar", group = "file manager"}),
     awful.key({  }, "XF86AudioRaiseVolume", function() awful.util.spawn("pactl set-sink-volume 0 +5%") end,
               {description = "raise volume", group = "media"}),
   awful.key({  }, "XF86AudioLowerVolume", function() awful.util.spawn("pactl set-sink-volume 0 -5%") end,
@@ -397,7 +397,9 @@ globalkeys = gears.table.join(
   awful.key({  }, "XF86MonBrightnessUp", function() awful.util.spawn("brightnessctl set +10%") end,
               {description = "brightness up", group = "media"}),
   awful.key({ "Control", Altkey }, "XF86MonBrightnessDown", function() awful.util.spawn("brightnessctl set -10%") end,
-              {description = "brightness down", group = "client"})
+              {description = "brightness down", group = "client"}),
+  awful.key({ Altkey }, "b", function() awful.util.spawn("firefox") end,
+              {description = "launch brave", group = "browser"})
 )
 
 clientkeys = gears.table.join(
