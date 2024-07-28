@@ -142,7 +142,7 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 --battery widget
 local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
 --volume widget
-local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
+local volume_widget = require("awesome-wm-widgets.volume-widget.volume")
 local logout_menu_widget = require("awesome-wm-widgets.logout-menu-widget.logout-menu")
 
 -- {{{ Wibar
@@ -253,7 +253,7 @@ awful.screen.connect_for_each_screen(function(s)
             mykeyboardlayout,
             wibox.widget.systray(),
             volume_widget(),
-		        battery_widget(),
+            battery_widget(),
             mytextclock,
             logout_menu_widget(),
             s.mylayoutbox,

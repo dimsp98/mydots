@@ -1,9 +1,4 @@
 #!/bin/sh
-
-#Xorg management
-#xrandr --output HDMI-1 --primary --mode 1920x1080 --rate 120 --dpi 60 --rotate normal --output eDP-1 --off &
-xrandr --output eDP-1 --primary --mode 1920x1080 --rate 60 --dpi 60 --rotate normal &
-
 #Xorg power management
 xset s off -dpms &
 
