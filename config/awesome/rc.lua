@@ -252,7 +252,7 @@ awful.screen.connect_for_each_screen(function(s)
             wibox.widget.systray(),
             battery_widget(),
             volume_widget{
-              widget_type = 'icon'
+              widget_type = 'icon_and_text'
       },
             mytextclock,
             logout_menu_widget(),
