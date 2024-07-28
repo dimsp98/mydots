@@ -370,13 +370,13 @@ globalkeys = gears.table.join(
     -- Menubar
     awful.key({ Modkey, "Shift" }, "p", function() menubar.show() end,
               {description = "show the menubar", group = "launcher"}),
-    awful.key({ Altkey }, "space", function() awful.util.spawn("~/.config/rofi/launchers/type-1/launcher.sh") end,
+    awful.key({ Altkey }, "space", function() awful.util.spawn("sh -c ~/.config/rofi/launchers/type-1/launcher.sh") end,
               {description = "rofi launcher", group = "launcher"}),
-    awful.key({ Altkey }, "p", function() awful.util.spawn("~/.config/rofi/powermenu/type-1/powermenu.sh") end,
+    awful.key({ Altkey }, "p", function() awful.util.spawn("sh -c ~/.config/rofi/powermenu/type-1/powermenu.sh") end,
               {description = "powermenu", group = "powermenu"}),
     awful.key({ Modkey }, "b", function() awful.util.spawn("brave-browser-stable") end,
               {description = "launch brave", group = "browser"}),
-    awful.key({  }, "Print", function() awful.util.spawn("~/.config/rofi/applets/bin/screenshot.sh") end,
+    awful.key({  }, "Print", function() awful.util.spawn("sh -c ~/.config/rofi/applets/bin/screenshot.sh") end,
               {description = "rofi screenshot", group = "screenshot"}),
     awful.key({ Modkey }, "d", function() awful.util.spawn("dmenu_run -c -F") end,
               {description = "dmenu", group = "launcher"}),
@@ -399,7 +399,7 @@ globalkeys = gears.table.join(
   awful.key({ "Control", Altkey }, "XF86MonBrightnessDown", function() awful.util.spawn("brightnessctl set -10%") end,
               {description = "brightness down", group = "client"}),
   awful.key({ Altkey }, "b", function() awful.util.spawn("firefox") end,
-              {description = "launch brave", group = "browser"})
+              {description = "launch firefox", group = "browser"})
 )
 
 clientkeys = gears.table.join(

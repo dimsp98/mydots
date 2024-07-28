@@ -2,9 +2,6 @@
 #Xorg power management
 xset s off -dpms &
 
-#keybinds
-pgrep -x sxhkd >/dev/null || sxhkd -c $HOME/.config/awesome/sxhkdrc &
-
 #compositor
 pgrep -x picom >/dev/null || picom -b --config ~/.config/awesome/picom.conf &
 
