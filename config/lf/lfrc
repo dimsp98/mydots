@@ -1,0 +1,172 @@
+set previewer ~/.config/lf/preview_kitty
+set cleaner ~/.config/lf/clean
+# Basic Settings
+set ignorecase true
+set hidden true
+set icons true
+set timefmt " 2006-01-02  15:04:05.000000000-0700"
+set promptfmt "\033[1;38;5;159m[ lf ] \033[38;5;159m%u@%h\033[38;5;159m:\033[38;5;256m%w/\033[0m"
+set shell zsh
+set truncatechar '⋯'
+
+# Yank Path
+cmd yank-path $printf '%s' "$fx" | xclip -i -selection clipboard
+
+# Custom Functions
+cmd mkdir ${{
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
+}}
+
+cmd open ${{
+    case $(file --mime-type "$f" -bL) in
+        text/*|application/json) $EDITOR "$f";;
+        *) xdg-open "$f" ;;
+    esac
+}}
+
+cmd mkfile ${{
+  printf "File Name: "
+  read ans
+  $EDITOR $ans
+}}
+
+cmd nvim ${{
+  nvim "$f"
+}}
+
+cmd chmod ${{
+  printf "Mode Bits: "
+  read ans
+
+  for file in "$fx"
+  do
+    chmod $ans $file
+  done
+
+  lf -remote 'send reload'
+}}
+
+cmd dragon %dragon-drag-and-drop -a -x $fx
+cmd dragon-stay %dragon-drag-and-drop -a $fx
+cmd dragon-individual %dragon-drag-and-drop $fx
+cmd cpdragon %cpdragon
+cmd mvdragon %mvdragon
+cmd dlfile %dlfile
+
+# Archive bindings
+cmd unarchive ${{
+  case "$f" in
+      *.zip) unzip "$f" ;;
+      *.tar.gz) tar -xzvf "$f" ;;
+      *.tar.bz2) tar -xjvf "$f" ;;
+      *.tar) tar -xvf "$f" ;;
+      *) echo "Unsupported format" ;;
+  esac
+}}
+
+cmd zip %zip -r "$f" "$f"
+cmd tar %tar cvf "$f.tar" "$f"
+cmd targz %tar cvzf "$f.tar.gz" "$f"
+cmd tarbz2 %tar cjvf "$f.tar.bz2" "$f"
+
+# Trash bindings
+cmd trash ${{
+  files=$(printf "$fx" | tr '\n' ';')
+  while [ "$files" ]; do
+    file=${files%%;*}
+
+    trash-put "$(basename "$file")"
+    if [ "$files" = "$file" ]; then
+      files=''
+    else
+      files="${files#*;}"
+    fi
+  done
+}}
+
+cmd restore_trash ${{
+  trash-restore
+}}
+
+cmd link %{{
+    set -- $(cat ~/.local/share/lf/files)
+    mode="$1"
+    shift
+    if [ "$#" -lt 1 ]; then
+        lf -remote "send $id echo no files to link"
+        exit 0
+    fi
+    case "$mode" in
+        # symbolically copy mode is indicating a soft link
+        copy) ln -sr -t . -- "$@";;
+        # while a move mode is indicating a hard link
+        move) ln -t . -- "$@";;
+    esac
+    rm ~/.local/share/lf/files
+    lf -remote "send clear"
+}}
+
+cmd share $curl -F"file=@$fx" https://0x0.st | xclip -selection c
+
+# Open with application
+cmd open-with-gui &$@ $fx ## opens with a gui application outside lf client
+cmd open-with-cli $$@ $fx ## opens with a cli application inside lf client
+map O push :open-with-gui<space> ## input application
+map o push :open-with-cli<space> ## input application
+
+# Bindings
+# Remove some defaults
+map m
+map n
+map "'"
+map '"'
+map d
+
+# Archive Mappings
+map az zip
+map at tar
+map ag targz
+map ab targz
+map au unarchive
+
+# Dragon Mapping
+map dr dragon
+map ds dragon-stay
+map di dragon-individual
+map dm mvdragon
+map dc cpdragon
+map dl dlfile
+
+# Basic Functions
+map . set hidden!
+map dd delete
+map dr restore_trash
+map e nvim
+map r rename
+map P link
+map p paste 
+map x cut
+map y copy
+map Y yank-path
+map <enter> open
+map R reload
+map mf mkfile
+map mr sudomkfile
+map md mkdir
+map C clear
+map c chmod
+
+# Movement
+map gh cd ~
+map gd cd ~/Documents
+map gD cd ~/Downloads
+map gp cd ~/Pictures
+map gc cd ~/.config
+map gr cd ~/dotfiles
+map gm cd ~/Music
+map gi cd /run/media
+map gM cd /media
+map ge cd /etc/
+map gu cd /usr/local/bin
