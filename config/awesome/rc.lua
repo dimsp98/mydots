@@ -565,32 +565,6 @@ awful.rules.rules = {
     { rule_any = {type = { "normal", "dialog" }
       }, properties = { titlebars_enabled = false }
     },
-
-    -- Set Firefox to always map on the tag named "2" on screen 1.
-      { rule = { class = "Brave-browser" },
-      properties = { screen = 1, tag = "2" }
-      },
-      { rule = { class = "Firefox" },
-      properties = { screen = 1, tag = "2" }
-      },
-      { rule = { class = "Thunar" },
-      properties = { screen = 1, tag = "3" }
-      },
-      { rule = { class = "Zathura" },
-      properties = { screen = 1, tag = "4" }
-      },
-      { rule = { class = "Soffice" },
-      properties = { screen = 1, tag = "5" }
-      },
-      { rule = { class = "Zotero" },
-      properties = { screen = 1, tag = "6" }
-      },
-      { rule = { class = "Steam" },
-      properties = { screen = 1, tag = "7" }
-      },
-      { rule = { class = "Zoom" },
-      properties = { screen = 1, tag = "9" }
-      },
 }
 -- }}}
 
