@@ -565,6 +565,10 @@ awful.rules.rules = {
     { rule_any = {type = { "normal", "dialog" }
       }, properties = { titlebars_enabled = false }
     },
+    
+    --Assign clients to tags
+     { rule = { class = "brave-browser-stable" },
+       properties = { screen = 1, tag = "2" } },
 }
 -- }}}
 
@@ -597,5 +601,3 @@ client.connect_signal("unfocus", function(c)
 end)
 
 -- }}}
-
-
