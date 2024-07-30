@@ -165,12 +165,3 @@ for_window [class="^.*"] border pixel 3
 default_border pixel 3
 gaps inner 5
 gaps outer 5
-
-#Workspace Rules
-assign [class="Zoom"] 1
-assign [class="firefox"] 2
-assign [class="Nemo"] 3
-assign [class="Zathura"] 4
-assign [class="Soffice"] 5
-assign [class="mpv"] 9
-
