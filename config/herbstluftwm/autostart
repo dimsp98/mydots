@@ -18,6 +18,7 @@ xset -dpms &
 pgrep -x picom >/dev/null || picom --config ~/.config/picom/picom.conf &
 feh --bg-scale --no-fehbg /home/dimitris/dotfiles/Backgrounds/cat-waves.png &
 xclip &
+nm-applet &
 setxkbmap -model pc104 -layout us,gr -option 'grp:alt_shift_toggle' &
 pgrep -x dunst >/dev/null || dunst -c ~/.config/dunst/dunstrc &
 pgrep -x sxhkd >/dev/null || sxhkd -c $HOME/.config/sxhkd/sxhkdrc &
