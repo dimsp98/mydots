@@ -9,6 +9,7 @@ Type=Application" | sudo tee /usr/share/xsessions/bspwm.desktop
 #Install Dependencies
 cd ~ && echo "Installing Dependencies"
 sudo pacman -Syyu
+sudo pacman -S bspwm sxhkdrc polybar rofi curl openssh wget bspwm htop pipewire pamixer pavucontrol openjdk-jre mpd ncmpcpp sxhkd xclip dunst mpv maim 
 sudo pacman -S arandr awesome acpi bluez qt6-qt5compat rustup pnpm kitty elogind rofi picom yt-dlp syncthing ImageMagick
 sudo pacman -S base-devel git bat papirus-icon-theme papirus-folders lf ffmpeg ghostscript zip unzip gzip 
 sudo pacman -S firefox libreoffice-fresh
