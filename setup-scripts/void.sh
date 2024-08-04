@@ -15,7 +15,6 @@ sudo xbps-install firefox libreoffice
 sudo xbps-install gcc clang zig qt5-graphicaleffects qt5-quickcontrols2 zsh neovim polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
 #creating directories
 echo "Creating directories"
-mkdir -p $HOME/.config
 sudo mkdir -p /usr/local/bin
 sudo mkdir -p /usr/share
 mkdir -p $HOME/Pictures
