@@ -52,6 +52,7 @@ sudo xbps-reconfigure -f fontconfig
 #Dual-boot Timezone
 echo "HARDWARECLOCK="localtime"" | sudo tee /etc/rc.conf
 #Arc Icon theme for awesomewm widgets
+mkdir $HOME/.local/share/icons
 cd $HOME/.local/share/icons/ 
 git clone https://github.com/horst3180/arc-icon-theme --depth 1 && cd arc-icon-theme
 ./autogen.sh --prefix=/usr
