@@ -1,11 +1,4 @@
 #!/bin/sh
-#Create bspwm session
-sudo touch /usr/share/xsessions/bspwm.desktop
-echo "[Desktop Entry]
-Name=bspwm
-Comment=Binary space partitioning window manager
-Exec=dbus-run-session bspwm
-Type=Application" | sudo tee /usr/share/xsessions/bspwm.desktop
 #Install Dependencies
 cd ~ && echo "Installing Dependencies"
 sudo xbps-install arandr awesome acpi bluez qt6-qt5compat rustup pnpm kitty elogind rofi picom yt-dlp syncthing ImageMagick void-repo-nonfree xarchiver thunar-media-tags-plugin thunar-archive-plugin xfce4-xkb-plugin
