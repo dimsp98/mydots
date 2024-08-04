@@ -13,6 +13,7 @@ sudo xbps-install void-repo-multilib void-repo-multilib-nonfree nodejs pnpm xorg
 sudo xbps-install blueman libspa-bluetooth lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm htop pipewire pamixer pavucontrol openjdk-jre mpd ncmpcpp sxhkd xclip dunst mpv maim 
 sudo xbps-install firefox libreoffice
 sudo xbps-install gcc clang zig qt5-graphicaleffects qt5-quickcontrols2 zsh neovim polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
+sudo xbps-remove -R gnome-keyring
 #creating directories
 echo "Creating directories"
 sudo mkdir -p /usr/local/bin
