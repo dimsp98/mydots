@@ -3,7 +3,7 @@
 cd ~ && echo "Installing Dependencies"
 sudo xbps-install arandr awesome acpi bluez qt6-qt5compat rustup pnpm kitty elogind rofi picom yt-dlp syncthing ImageMagick void-repo-nonfree xarchiver thunar-media-tags-plugin thunar-archive-plugin 
 sudo xbps-install void-repo-multilib void-repo-multilib-nonfree nodejs pnpm xorg xf86-video-nouveau base-devel git bat papirus-icon-theme papirus-folders lf ffmpeg ghostscript zip unzip gzip 
-sudo xbps-install blueman libspa-bluetooth lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm htop pipewire pamixer pavucontrol openjdk-jre mpd ncmpcpp sxhkd xclip dunst mpv maim 
+sudo xbps-install bluedevil libspa-bluetooth lxappearance libX11-devel libXinerama-devel libXft-devel xsetroot curl openssh wget bspwm htop pipewire pamixer pavucontrol openjdk-jre mpd ncmpcpp sxhkd xclip dunst mpv maim 
 sudo xbps-install plasma-desktop kde5 kde5-baseapps sddm
 sudo xbps-install firefox libreoffice 
 sudo xbps-install gcc clang zig qt5-graphicaleffects qt5-quickcontrols2 zsh neovim polybar jsoncpp feh zathura-pdf-mupdf hplip cups simple-scan ntfs-3g udisks2
